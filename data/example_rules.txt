@@ -1,0 +1,18 @@
+Cô ấy buồn.	Cô ấy buồn
+Bạn viết đẹp lắm!	Bạn viết đẹp + (nét mặt)!
+Tôi đi học.	Tôi đi học.
+Trưa nay, tôi ăn hai quả táo xanh.	Tôi táo xanh ăn hai trưa nay.
+Tôi thương mẹ tôi nhất.	Tôi mẹ thương nhất
+Nhà tôi ở Quận 3, thành phố Hồ Chí Minh.	Tôi nhà quận 3, thành phố Hồ Chí Minh.
+Con chưa uống sữa.	Con sữa uống chưa.
+Tôi thích ăn dưa hấu.	Tôi ăn dưa hấu thích.
+Tôi không thích ăn vú sữa.	Tôi ăn vú sữa không thích.
+Ai cho bạn mượn sách?	Sách cho bạn mượn ai?
+Em có bao nhiêu cái kẹo?	Em kẹo có bao nhiêu?
+Bạn thích ăn gì?	Bạn ăn thích gì?
+Gia đình của bạn có mấy người?	Bạn gia đình người mấy?
+Ngày mai là thứ ba đúng không?	Mai thứ ba (+ nét mặt )?
+Bạn có người yêu chưa?	Bạn người yêu có (+ nét mặt )?
+Bạn thích màu đen hay màu trắng?	Bạn đen trắng thích (+ nét mặt)?
+Ôi, bông hoa đẹp thế!	Hoa đẹp + (nét mặt)!
+Hãy mở cửa sổ ra!	Cửa sổ mở + (nét mặt)!
