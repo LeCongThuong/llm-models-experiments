@@ -16,6 +16,7 @@ def read_json_file(file_path):
     with open(file_path, 'r') as f:
         return json.load(f)
     
+    
 def split_line_by_tab(line):
     s1, s2 = line.split('\t')
     s2 = s2.strip()
