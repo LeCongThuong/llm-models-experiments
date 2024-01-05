@@ -1,0 +1,82 @@
+[
+    {
+        "input": "hiện nay",
+        "output": [
+            "hiện_nay\n",
+            "hiện_đại\n"
+        ],
+        "gt": "bây giờ"
+    },
+    {
+        "input": "đồng bào",
+        "output": [
+            "đồng_bào\n",
+            "báo_động\n"
+        ],
+        "gt": "đồng hương"
+    },
+    {
+        "input": "động viên",
+        "output": [
+            "động_viên\n",
+            "công_viên\n"
+        ],
+        "gt": "khích lệ"
+    },
+    {
+        "input": "sa thải",
+        "output": [
+            "sa_thải\n",
+            "thái_độ\n"
+        ],
+        "gt": "đuổi việc"
+    },
+    {
+        "input": "đóng góp",
+        "output": [
+            "đóng_góp\n",
+            "góp_ý\n"
+        ],
+        "gt": "hỗ trợ"
+    },
+    {
+        "input": "đun nấu",
+        "output": [
+            "đun_nấu\n",
+            "ấm_đun_nước\n"
+        ],
+        "gt": "nấu nướng"
+    },
+    {
+        "input": "đoàn tụ",
+        "output": [
+            "đoàn_tụ\n",
+            "đoàn_cải_lương\n"
+        ],
+        "gt": "sum vầy"
+    },
+    {
+        "input": "đối thoại",
+        "output": [
+            "đối_thoại\n",
+            "điện_thoại\n"
+        ],
+        "gt": "giao tiếp"
+    },
+    {
+        "input": "giải quyết",
+        "output": [
+            "giải_quyết\n",
+            "gửi_quà\n"
+        ],
+        "gt": "xử lý"
+    },
+    {
+        "input": "giám sát",
+        "output": [
+            "giám_sát\n",
+            "giám_đốc\n"
+        ],
+        "gt": "theo dõi"
+    }
+]

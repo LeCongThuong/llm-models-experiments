@@ -9,6 +9,8 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
 from utils import read_json_file
 import chromadb
 from chromadb.utils import embedding_functions
+import unidecode
+
 
 def load_word_list(file_path):
     with open(file_path, 'r') as f:
@@ -16,11 +18,14 @@ def load_word_list(file_path):
     
 def embedding_chromadb(word_list, metadata_list, id_list, collection_name, CHROMA_DATA_PATH):
     client = chromadb.PersistentClient(path=CHROMA_DATA_PATH)
-    embedding_function = embedding_functions.GoogleGenerativeAiEmbeddingFunction(api_key=os.getenv('GOOGLE_API_KEY'), task_type="clustering")
+    embedding_function = embedding_functions.GoogleGenerativeAiEmbeddingFunction(api_key=os.getenv('GOOGLE_API_KEY'), task_type="semantic_similarity")
 
     collection = client.get_or_create_collection(
         name=collection_name, embedding_function=embedding_function
     )
+    word_list = [word.replace(" ", "_") for word in word_list]
+    # remove mark, sign of vietnamese word
+
     collection.add(
      documents=word_list,
      ids=id_list,
@@ -50,7 +55,7 @@ def main():
             metadata_list.append({word: ""})
         id_list.append(str(id))
 
-    embedding_chromadb(word_list, metadata_list, id_list, "test_gemini", CHROMA_DATA_PATH)
+    embedding_chromadb(word_list, metadata_list, id_list, "test_gemini_4", CHROMA_DATA_PATH)
 
 if __name__ == '__main__':
     main()

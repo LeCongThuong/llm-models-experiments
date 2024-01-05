@@ -1,0 +1,82 @@
+[
+    {
+        "input": "đối thoại",
+        "output": [
+            "đối thoại\n",
+            "điện thoại\n"
+        ],
+        "gt": "giao tiếp"
+    },
+    {
+        "input": "đoàn tụ",
+        "output": [
+            "đoàn tụ\n",
+            "đoạn thẳng\n"
+        ],
+        "gt": "sum vầy"
+    },
+    {
+        "input": "hiện nay",
+        "output": [
+            "hiện nay\n",
+            "hiện đại\n"
+        ],
+        "gt": "bây giờ"
+    },
+    {
+        "input": "sa thải",
+        "output": [
+            "sa thải\n",
+            "sự thật\n"
+        ],
+        "gt": "đuổi việc"
+    },
+    {
+        "input": "giám sát",
+        "output": [
+            "giám sát\n",
+            "gốm sứ\n"
+        ],
+        "gt": "theo dõi"
+    },
+    {
+        "input": "động viên",
+        "output": [
+            "động viên\n",
+            "công viên\n"
+        ],
+        "gt": "Khích lệ"
+    },
+    {
+        "input": "đun nấu",
+        "output": [
+            "đun nấu\n",
+            "ấm đun nước\n"
+        ],
+        "gt": "nấu nướng"
+    },
+    {
+        "input": "đóng góp",
+        "output": [
+            "đóng góp\n",
+            "đón tiếp\n"
+        ],
+        "gt": "hỗ trợ"
+    },
+    {
+        "input": "giải quyết",
+        "output": [
+            "giải quyết\n",
+            "gửi quà\n"
+        ],
+        "gt": "xử lý"
+    },
+    {
+        "input": "đồng bào",
+        "output": [
+            "đồng bào\n",
+            "báo động\n"
+        ],
+        "gt": "đồng hương"
+    }
+]
