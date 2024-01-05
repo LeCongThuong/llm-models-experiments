@@ -1,0 +1,117 @@
+
+            Sentence: "Cô ấy buồn."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Cô ấy buồn"
+            
+            Sentence: "Bạn viết đẹp lắm!"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Bạn viết đẹp + (nét mặt)!"
+            
+            Sentence: "Tôi đi học."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi đi học."
+            
+            Sentence: "Trưa nay, tôi ăn hai quả táo xanh."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi táo xanh ăn hai trưa nay."
+            
+            Sentence: "Tôi thương mẹ tôi nhất."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi mẹ thương nhất"
+            
+            Sentence: "Nhà tôi ở Quận 3, thành phố Hồ Chí Minh."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi nhà quận 3, thành phố Hồ Chí Minh."
+            
+            Sentence: "Con chưa uống sữa."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Con sữa uống chưa."
+            
+            Sentence: "Tôi thích ăn dưa hấu."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi ăn dưa hấu thích."
+            
+            Sentence: "Tôi không thích ăn vú sữa."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi ăn vú sữa không thích."
+            
+            Sentence: "Ai cho bạn mượn sách?"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Sách cho bạn mượn ai?"
+            
+            Sentence: "Em có bao nhiêu cái kẹo?"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Em kẹo có bao nhiêu?"
+            
+            Sentence: "Bạn thích ăn gì?"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Bạn ăn thích gì?"
+            
+            Sentence: "Gia đình của bạn có mấy người?"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Bạn gia đình người mấy?"
+            
+            Sentence: "Ngày mai là thứ ba đúng không?"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Mai thứ ba (+ nét mặt )?"
+            
+            Sentence: "Bạn có người yêu chưa?"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Bạn người yêu có (+ nét mặt )?"
+            
+            Sentence: "Bạn thích màu đen hay màu trắng?"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Bạn đen trắng thích (+ nét mặt)?"
+            
+            Sentence: "Ôi, bông hoa đẹp thế!"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Hoa đẹp + (nét mặt)!"
+            
+            Sentence: "Hãy mở cửa sổ ra!"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Cửa sổ mở + (nét mặt)!"
+            
+            Sentence: "Tôi đến siêu thị cùng mẹ"
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi mẹ cùng siêu thị đến."
+            
+            Sentence: "Tôi đến."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi đến."
+            
+            Sentence: "Tôi đến siêu thị bằng xe đạp."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi siêu thị đến xe đạp."
+            
+            Sentence: "Tôi đến siêu thị cùng mẹ bằng xe đạp."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi mẹ cùng siêu thị đến xe đạp."
+            
+            Sentence: "Tôi thích đến siêu thị cùng mẹ."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi mẹ cùng siêu thị đến thích."
+            
+            Sentence: "Bà nội của tôi thích đi siêu thị cùng mẹ tôi."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Bà nội của tôi mẹ của tôi cùng siêu thị đi thích."
+            
+            Sentence: "Tôi không thích đến siêu thị."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tôi siêu thị đến thích không."
+            
+            Sentence: "Chủ nhật, tôi đến siêu thị."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Chủ nhật, tôi bổ ngữ đến."
+            
+            Sentence: "Chủ nhật tuần sau,tôi sẽ đến siêu thị."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Tuần sau chủ nhật,tôi siêu thị đến sẽ."
+            
+            Sentence: "Ở trường, tôi có bạn thân."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Ở trường, tôi bạn thân có."
+            
+            Sentence: "Chủ nhật, tôi đến siêu thị lúc 7 giờ tối."
+            Question: Convert the above sentence into vietnamese sign language sentence.
+            Answer: "Chủ nhật tối,tôi đến siêu thị 7 giờ."
+            

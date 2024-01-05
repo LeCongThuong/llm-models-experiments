@@ -1,0 +1,52 @@
+[
+    {
+        "input": "giáo viên thích những quả nho xanh",
+        "output": "Nho xanh, giáo viên thích",
+        "gt": "giáo viên nho xanh thích"
+    },
+    {
+        "input": "khi có nhiều mây đến thì sẽ có lũ lụt",
+        "output": "Lụy nhiều mây đến lũ",
+        "gt": "khi mây đến nhiều thì lũ lụt có"
+    },
+    {
+        "input": "sách có hay thì người ta mới thích đọc",
+        "output": "Sách đọc thích mới người ta hay có",
+        "gt": "sách hay có người ta đọc thích"
+    },
+    {
+        "input": "cái này bao nhiêu tiền",
+        "output": "Bao nhiêu cái này tiền",
+        "gt": "cái này tiền bao nhiêu"
+    },
+    {
+        "input": "ông bình bị anh tôi đánh",
+        "output": "ông bình anh tôi đánh",
+        "gt": "anh tôi Bình đánh"
+    },
+    {
+        "input": "con phải cất áo quần vào kẻo mưa đến nơi rồi đấy",
+        "output": "Áo quần cất mưa đến rồi đấy con",
+        "gt": "con áo quần cất mưa"
+    },
+    {
+        "input": "trong phích có nước sôi đấy",
+        "output": "Phích nước sôi có đấy",
+        "gt": "phích nước sôi có"
+    },
+    {
+        "input": "tôi chỉ thích đọc Nam Cao",
+        "output": "Tôi đọc thích Nam Cao chỉ",
+        "gt": "tôi Nam Cao đọc sách"
+    },
+    {
+        "input": "nó làm được thế này đã là khá lắm rồi",
+        "output": "Làm khá này thế nó rồi lắm",
+        "gt": "nó làm được thế này khá rồi"
+    },
+    {
+        "input": "Nam là học sinh giỏi",
+        "output": "Nam giỏi học sinh",
+        "gt": "Nam học sinh giỏi"
+    }
+]

@@ -1,3 +1,10 @@
+import os
+import sys
+from dotenv import load_dotenv
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
+
+
 from utils import TextByGemini, read_json_file
 import json
 from tqdm import tqdm
@@ -7,7 +14,7 @@ from time import sleep
 
 def main():
     model = TextByGemini()
-    complex_sentence_file_path = 'data/sentence_simplification.json'
+    complex_sentence_file_path = '../data/simplification/sentence_simplification.json'
     complex_sentences = read_json_file(complex_sentence_file_path)
     simple_sentences_dict = {}
     for difficulty_level, complex_sentence_list in complex_sentences.items():
@@ -15,10 +22,10 @@ def main():
         for complex_sentence in tqdm(complex_sentence_list):
             try:
                 prompt = f"""
-Let’s think step by step. I want you to replace my complex sentence with simple sentence(s). Keep the meaning same, but make them simpler. 
-Complex: {complex_sentence}
-Simple:
-"""
+                Let’s think step by step. I want you to replace my complex sentence with simple sentence(s). Keep the meaning same, but make them simpler. 
+                Complex: {complex_sentence}
+                Simple:
+                """
                 simple_sentence = model.generate_text(prompt)
                 print(complex_sentence, "---", simple_sentence)
                 sleep(1)
@@ -28,7 +35,7 @@ Simple:
                 print(f"Error: {complex_sentence}")
                 continue
         simple_sentences_dict[difficulty_level] = sim_complex_sentences
-    with open('data/simple_sentences.json', 'w', encoding="utf-8") as f:
+    with open('../data/simplification/simple_sentences.json', 'w', encoding="utf-8") as f:
         json.dump(simple_sentences_dict, f, indent=4, ensure_ascii=False)
 
 if __name__ == '__main__':
