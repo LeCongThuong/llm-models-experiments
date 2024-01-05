@@ -25,7 +25,7 @@ def convert2prompt(file_path):
         s2 = s2.strip()
         prompts.append(f"""
             Sentence: "{s1}"
-            Question: Convert the above into the vietnamese sign language structure.
+            Question: Convert the above sentence into a Vietnamese sign language sentence.
             Answer: "{s2}"
             """)
     #concatenate all prompts
@@ -38,6 +38,6 @@ def gen_few_shot_prompt(sentence, prompt):
             {prompt}
             ----------------------------------
             Sentence: "{sentence}"
-            Question: Convert the above into the vietnamese sign language structure.
+            Question: Based on the above examples, convert the sentence into a Vietnamese sign language sentence. Let’s think step by step.
             Answer: 
             """

@@ -16,3 +16,14 @@ Bạn có người yêu chưa?	Bạn người yêu có (+ nét mặt )?
 Bạn thích màu đen hay màu trắng?	Bạn đen trắng thích (+ nét mặt)?
 Ôi, bông hoa đẹp thế!	Hoa đẹp + (nét mặt)!
 Hãy mở cửa sổ ra!	Cửa sổ mở + (nét mặt)!
+Tôi đến siêu thị cùng mẹ    Tôi mẹ cùng siêu thị đến.
+Tôi đến.    Tôi đến.
+Tôi đến siêu thị bằng xe đạp.   Tôi siêu thị đến xe đạp.
+Tôi đến siêu thị cùng mẹ bằng xe đạp.   Tôi mẹ cùng siêu thị đến xe đạp.
+Tôi thích đến siêu thị cùng mẹ. Tôi mẹ cùng siêu thị đến thích.
+Bà nội của tôi thích đi siêu thị cùng mẹ tôi.   Bà nội của tôi mẹ của tôi cùng siêu thị đi thích.
+Tôi không thích đến siêu thị.   Tôi siêu thị đến thích không.
+Chủ nhật, tôi đến siêu thị. Chủ nhật, tôi bổ ngữ đến.
+Chủ nhật tuần sau,tôi sẽ đến siêu thị.  Tuần sauc hủ nhật,tôi siêu thị đến sẽ.
+Ở trường, tôi có bạn thân.  Ở trường, tôi bạn thân có.
+Chủ nhật, tôi đến siêu thị lúc 7 giờ tối.   Chủ nhật tối,tôi đến siêu thị 7 giờ.
