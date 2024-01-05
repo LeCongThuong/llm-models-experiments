@@ -7,5 +7,5 @@ The goals is to estimate the abilities of the Large Language Models for Vietname
     - [x] Vietnamese sign language grammar translation
     - [x] Word Embedding
 
-## 4. Contributors
+## 3. Contributors
 Le Cong Thuong
