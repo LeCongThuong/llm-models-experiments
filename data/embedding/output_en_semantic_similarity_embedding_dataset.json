@@ -1,0 +1,122 @@
+[
+    {
+        "input": "đoàn tụ",
+        "output": [
+            {
+                "đoàn tụ": "reunion"
+            },
+            {
+                "sum họp": "reunion"
+            }
+        ],
+        "gt": "sum vầy"
+    },
+    {
+        "input": "đóng góp",
+        "output": [
+            {
+                "đóng góp": "contribute"
+            },
+            {
+                "góp tiền": "contribute money"
+            }
+        ],
+        "gt": "hỗ trợ"
+    },
+    {
+        "input": "đối thoại",
+        "output": [
+            {
+                "đối thoại": "dialogue"
+            },
+            {
+                "nói chuyện": "talk"
+            }
+        ],
+        "gt": "nói chuyện"
+    },
+    {
+        "input": "đồng bào",
+        "output": [
+            {
+                "đồng bào": "compatriot"
+            },
+            {
+                "đồng hương": "compatriot"
+            }
+        ],
+        "gt": "đồng hương"
+    },
+    {
+        "input": "động viên",
+        "output": [
+            {
+                "khuyến khích": "encourage"
+            },
+            {
+                "động viên": "encourage"
+            }
+        ],
+        "gt": "khích lệ"
+    },
+    {
+        "input": "đun nấu",
+        "output": [
+            {
+                "đun nấu": "cook"
+            },
+            {
+                "nấu nướng": "cook"
+            }
+        ],
+        "gt": "nấu nướng"
+    },
+    {
+        "input": "sa thải",
+        "output": [
+            {
+                "sa thải": "layoff"
+            },
+            {
+                "rạch": "cut"
+            }
+        ],
+        "gt": "đuổi việc"
+    },
+    {
+        "input": "giám sát",
+        "output": [
+            {
+                "giám sát": "supervise"
+            },
+            {
+                "tuân thủ": "observe"
+            }
+        ],
+        "gt": "theo dõi"
+    },
+    {
+        "input": "giải quyết",
+        "output": [
+            {
+                "giải quyết": "resolve"
+            },
+            {
+                "lời giải": "solution"
+            }
+        ],
+        "gt": "xử lý"
+    },
+    {
+        "input": "hiện nay",
+        "output": [
+            {
+                "hiện nay": "currently"
+            },
+            {
+                "bây giờ": "now"
+            }
+        ],
+        "gt": "bây giờ"
+    }
+]

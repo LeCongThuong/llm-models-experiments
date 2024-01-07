@@ -1,12 +1,42 @@
 {
-    "đoàn tụ": "sum vầy",
-    "đóng góp": "hỗ trợ",
-    "đối thoại": "giao tiếp",
-    "đồng bào": "đồng hương",
-    "động viên": "khích lệ",
-    "đun nấu": "nấu nướng",
-    "sa thải": "đuổi việc",
-    "giám sát": "theo dõi",
-    "giải quyết": "xử lý",
-    "hiện nay": "bây giờ"
+    "đoàn tụ": {
+        "vi": "sum vầy",
+        "sent": "Mọi người sum vầy bên bàn ăn"
+    },
+    "đóng góp": {
+        "vi":"hỗ trợ",
+        "sent": "Việt Nam hỗ trợ nước bạn tham gia cứu hộ người mất tích"
+    },
+    "đối thoại": {
+        "vi": "nói chuyện",
+        "sent":"Nhà trường nói chuyện với phụ huynh về việc học của con em"
+    },
+    "đồng bào": {
+        "vi":"đồng hương",
+        "sent":"Anh ta và tôi là đồng hương"
+    },
+    "động viên": {
+        "vi":"khích lệ",
+        "sent":"Nhà trường khích lệ học sinh học tập chăm chỉ"
+    },
+    "đun nấu": {
+        "vi":"nấu nướng",
+        "sent":"Anh ta nấu nuớng rất ngon"
+    },
+    "sa thải": {
+        "vi":"đuổi việc",
+        "sent":"Công ty đuổi việc anh ta vì anh ta không làm việc chăm chỉ"
+    },
+    "giám sát": {
+        "vi":"theo dõi",
+        "sent": "Camera theo dõi nhân viên 24/7"
+    },
+    "giải quyết": {
+        "vi":"xử lý",
+        "sent":"Anh ta xử lý vấn đề rất nhanh chóng"
+    },
+    "hiện nay": {
+        "vi":"bây giờ",
+        "sent": "Bây giời tôi đang ở nhà"
+    }
 }

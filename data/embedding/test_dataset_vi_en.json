@@ -1,0 +1,72 @@
+{
+    "đoàn tụ": {
+        "vi": "sum vầy",
+        "sent": "Mọi người sum vầy bên bàn ăn",
+        "en_word": "gather",
+        "type": "verb",
+        "origin_en_word": "reunion"
+    },
+    "đóng góp": {
+        "vi": "hỗ trợ",
+        "sent": "Việt Nam hỗ trợ nước bạn tham gia cứu hộ người mất tích",
+        "en_word": "support",
+        "type": "verb",
+        "origin_en_word": "contribute"
+    },
+    "đối thoại": {
+        "vi": "nói chuyện",
+        "sent": "Nhà trường nói chuyện với phụ huynh về việc học của con em",
+        "en_word": "talk",
+        "type": "verb",
+        "origin_en_word": "dialogue"
+    },
+    "đồng bào": {
+        "vi": "đồng hương",
+        "sent": "Anh ta và tôi là đồng hương",
+        "en_word": "compatriot",
+        "type": "noun",
+        "origin_en_word": "compatriot"
+    },
+    "động viên": {
+        "vi": "khích lệ",
+        "sent": "Nhà trường khích lệ học sinh học tập chăm chỉ",
+        "en_word": "encourage, motivate",
+        "type": "verb",
+        "origin_en_word": "encourage"
+    },
+    "đun nấu": {
+        "vi": "nấu nướng",
+        "sent": "Anh ta nấu nuớng rất ngon",
+        "en_word": "cook",
+        "type": "verb",
+        "origin_en_word": "cook"
+    },
+    "sa thải": {
+        "vi": "đuổi việc",
+        "sent": "Công ty đuổi việc anh ta vì anh ta không làm việc chăm chỉ",
+        "en_word": "fire",
+        "type": "verb",
+        "origin_en_word": "layoff"
+    },
+    "giám sát": {
+        "vi": "theo dõi",
+        "sent": "Camera theo dõi nhân viên 24/7",
+        "en_word": "surveillance",
+        "type": "noun",
+        "origin_en_word": "supervise"
+    },
+    "giải quyết": {
+        "vi": "xử lý",
+        "sent": "Anh ta xử lý vấn đề rất nhanh chóng",
+        "en_word": "handle",
+        "type": "verb",
+        "origin_en_word": "resolve"
+    },
+    "hiện nay": {
+        "vi": "bây giờ",
+        "sent": "Bây giời tôi đang ở nhà",
+        "en_word": "now",
+        "type": "adverb",
+        "origin_en_word": "currently"
+    }
+}
