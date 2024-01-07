@@ -2,6 +2,7 @@ import os
 import sys
 import re
 from dotenv import load_dotenv
+from underthesea import pos_tag, chunk
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
 
@@ -87,10 +88,10 @@ def generate_prompt_to_split_sentence_into_phrases(sentence):
     prompt = f"""
         sentence: "Nhà tôi có 4 người"
         Split the sentence into short phrases and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement.
-        Answer: <subject phrase> Nhà tôi </subject phrase>, <verb phrase> có </verb phrase>, <object phrase> 4 người </object phrase>
+        Answer: Nhà tôi/có/4 người
         sentence: "Tôi đi siêu thị băng xe đạp."
         Split the sentence into short phrases and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement.
-        Answer: <subject phrase> Tôi </subject phrase>, <verb phrase> đi </verb phrase>, <object phrase> siêu thị </object phrase>, <object complement> bằng xe đạp </object complement>
+        Answer: Tôi/đi/siêu thị/bằng xe đạp
         ------------------------
         sentence: "{sentence}"
         Split the sentence into short phrases and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement. Let's think step by step. No need to explain.
@@ -99,39 +100,40 @@ def generate_prompt_to_split_sentence_into_phrases(sentence):
     return prompt
 
 def check_patterns_in_sentence(output):
-    phrase_list = [phrase.strip() for phrase in output.split(",")]
-    type_of_phrases = []
-    for phrase in phrase_list:
-        if "<subject phrase>" in phrase:
-            type_of_phrases.append("S")
-        if "verb phrase" in phrase:
-            type_of_phrases.append("V")
-        if "<object phrase>" in phrase:
-            type_of_phrases.append("O")
-        if "<adverb phrase>" in phrase:
-            type_of_phrases.append("Adv")
-        if "<subject complement>" in phrase:
-            type_of_phrases.append("SC")
-        if "<object complement>" in phrase:
-            type_of_phrases.append("OC")
-    # check whether S + V + 0 appear in the sentence continuous, if exist, change S + V +0 -> S + 0 + V.
-    if "S" in type_of_phrases and "V" in type_of_phrases and "O" in type_of_phrases:
-        if type_of_phrases.index("S") + 1 == type_of_phrases.index("V") and type_of_phrases.index("V") + 1 == type_of_phrases.index("O"):
-            s_index, v_index, o_index = type_of_phrases.index("S"), type_of_phrases.index("V"), type_of_phrases.index("O")
-            # check 0B appear in the sentence continuous, if exist, change S + V + 0 + 0B -> S + O + 0B + V.
-            if "SC" in type_of_phrases and o_index + 1 == type_of_phrases.index("SC"):
-                phrase_list[o_index], phrase_list[type_of_phrases.index("SC")]  = phrase_list[type_of_phrases.index("SC")],  phrase_list[o_index]
-                type_of_phrases[o_index], type_of_phrases[type_of_phrases.index("SC")]  = type_of_phrases[type_of_phrases.index("SC")],  type_of_phrases[o_index]
-            phrase_list[v_index], phrase_list[o_index]  = phrase_list[o_index],  phrase_list[v_index]
-            type_of_phrases[v_index], type_of_phrases[o_index]  = type_of_phrases[o_index],  type_of_phrases[v_index]
+    # phrase_list = [phrase.strip() for phrase in output.split(",")]
+    # type_of_phrases = []
+    # for phrase in phrase_list:
+    #     if "<subject phrase>" in phrase:
+    #         type_of_phrases.append("S")
+    #     if "verb phrase" in phrase:
+    #         type_of_phrases.append("V")
+    #     if "<object phrase>" in phrase:
+    #         type_of_phrases.append("O")
+    #     if "<adverb phrase>" in phrase:
+    #         type_of_phrases.append("Adv")
+    #     if "<subject complement>" in phrase:
+    #         type_of_phrases.append("SC")
+    #     if "<object complement>" in phrase:
+    #         type_of_phrases.append("OC")
+    # # check whether S + V + 0 appear in the sentence continuous, if exist, change S + V +0 -> S + 0 + V.
+    # if "S" in type_of_phrases and "V" in type_of_phrases and "O" in type_of_phrases:
+    #     if type_of_phrases.index("S") + 1 == type_of_phrases.index("V") and type_of_phrases.index("V") + 1 == type_of_phrases.index("O"):
+    #         s_index, v_index, o_index = type_of_phrases.index("S"), type_of_phrases.index("V"), type_of_phrases.index("O")
+    #         # check 0B appear in the sentence continuous, if exist, change S + V + 0 + 0B -> S + O + 0B + V.
+    #         if "SC" in type_of_phrases and o_index + 1 == type_of_phrases.index("SC"):
+    #             phrase_list[o_index], phrase_list[type_of_phrases.index("SC")]  = phrase_list[type_of_phrases.index("SC")],  phrase_list[o_index]
+    #             type_of_phrases[o_index], type_of_phrases[type_of_phrases.index("SC")]  = type_of_phrases[type_of_phrases.index("SC")],  type_of_phrases[o_index]
+    #         phrase_list[v_index], phrase_list[o_index]  = phrase_list[o_index],  phrase_list[v_index]
+    #         type_of_phrases[v_index], type_of_phrases[o_index]  = type_of_phrases[o_index],  type_of_phrases[v_index]
     
-    # remove <pattern>, <pattern/> in phrase_list
-    phrase_list = [re.sub(r'<.*?>', '', phrase).strip() for phrase in phrase_list]
-    return phrase_list, type_of_phrases
+    # # remove <pattern>, <pattern/> in phrase_list
+    # phrase_list = [re.sub(r'<.*?>', '', phrase).strip() for phrase in phrase_list]
+    # return phrase_list, type_of_phrases
+    return output.split("/")
 
 def main():
     model = TextByGemini() 
-    test_sentence = "Nó quay nhanh đến mức không thể thấy rõ hình dạng , mà chỉ thấy là một khối cầu dẹp màu trắng và nó có thể quay trên đầu nhọn được ." #"Từ gác nhỏ, Hải nghe mọi thanh âm xô bồ của thành phố."
+    test_sentence = "Hai thập niên đầu thế kỷ XX ở Việt Nam , trong nhiều vấn đề nhân học , nổi lên vấn đề nữ học như là một vấn đề quan trọng , thu hút sự chú ý thảo luận và tranh luận của giới trí thức , nhất là nhìn từ quan điểm của chính người phụ nữ ."
     prompt = genereate_prompt_to_check_types_of_sentence(test_sentence)
     type_sentence = model.generate_text(prompt)
     if type_sentence.strip() == "declarative":
@@ -149,9 +151,11 @@ def main():
                     prompt = generate_prompt_to_split_sentence_into_phrases(sent)
                     phrase_sentence = model.generate_text(prompt)
                     print(phrase_sentence)
-                    phrase, phrase_type = check_patterns_in_sentence(phrase_sentence)
+                    phrase = check_patterns_in_sentence(phrase_sentence)
                     print(phrase)
-                    print(phrase_type)
+                    for word in phrase:
+                        print(chunk(word))
+                    # print(phrase_type)
                     print("-----")
                  
         # prompt = generate_prompt_to_check_pos_and_neg_of_declarative_sentence(test_sentence)
