@@ -50,14 +50,35 @@ def generate_prompt_to_check_pos_and_neg_of_declarative_sentence(sentence):
     return prompt
 
 
+def classify_sentence_type(model, sentence):
+    prompt = """
+        sentence: "Người ôm lấy người vợ xiết bao thân yêu, người bạn đời chung thủy của mình mà khóc dầm dề"
+        Classify the above sentence into one of the following types: simple, compound, complex
+        Answer: complex
+        sentence: "Tôi đi siêu thị bằng xe đạp."
+        Classify the above sentence into one of the following types: simple, compound
+        Answer: simple
+        sentence: "Tôi đi siêu thị bằng xe đạp và mua một cái bánh."
+        Classify the above sentence into one of the following types: simple, compound
+        Answer: compound
+        ------------------------
+        sentence: "{sentence}"
+        Classify the above sentence into one of the following types: simple, compound. Let's think step by step.
+        Answer:
+    """ 
+    sentence_type = model.generate_text(prompt)
+    return sentence_type
+
+
+
 def generate_prompt_to_check_how_many_clauses_of_sentence(sentence):
     prompt = f"""
         sentence: "Nhà tôi có 4 người"
-        The above sentence has how many clauses?
+        The sentence has how many independent clauses?
         Answer: 1
         ------------------------
         sentence: "{sentence}"
-        The above sentence has how many clauses? Let's think step by step.
+        The sentence has how many independent clauses? Let's think step by step.
         Answer:
     """
     return prompt
@@ -87,17 +108,18 @@ def extract_patterns_from_gemini_output(gemini_output, pattern="sent"):
 def generate_prompt_to_split_sentence_into_phrases(sentence):
     prompt = f"""
         sentence: "Nhà tôi có 4 người"
-        Split the sentence into short phrases and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement.
+        Split the sentence into short phrases (no more 3 words) and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement.
         Answer: Nhà tôi/có/4 người
         sentence: "Tôi đi siêu thị băng xe đạp."
-        Split the sentence into short phrases and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement.
-        Answer: Tôi/đi/siêu thị/bằng xe đạp
+        Split the sentence into short phrases (no more 3 words) and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement. 
+        Answer: Tôi/đi/siêu thị/bằng/xe đạp
         ------------------------
         sentence: "{sentence}"
-        Split the sentence into short phrases and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement. Let's think step by step. No need to explain.
+        Split the sentence into short phrases (no more 3 words) and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement. Let's think step by step. No need to explain.
         Answer:
     """
     return prompt
+
 
 def check_patterns_in_sentence(output):
     return output.split("/")
@@ -105,6 +127,7 @@ def check_patterns_in_sentence(output):
 def split_into_simple_sentence(model, test_sentence):
     prompt = generate_prompt_to_check_how_many_clauses_of_sentence(test_sentence)
     num_clauses = model.generate_text(prompt)
+    print("Num clauses: ", num_clauses)
     num_clauses = re.sub("[^0-9]", "", num_clauses)
     if int(num_clauses.strip()) > 1:
         prompt = generate_to_rewrite_sentence_with_one_clause(test_sentence)
@@ -113,6 +136,18 @@ def split_into_simple_sentence(model, test_sentence):
         one_clause_sentences = [test_sentence]
     return one_clause_sentences
 
+def remove_unnecessary_words_in_sent(model, sent):
+    prompt = f"""
+        sentence: "Anh ta có thể làm được việc này nhưng anh ta đã không làm"   
+        Remove: Modal particles, Conjunctions, Interjections, Auxiliary words, Empty words
+        Answer: Anh ta làm được việc này anh ta không làm.
+        ------------------------
+        sentence: "{sent}"
+        Remove: Modal particles, Conjunctions, Interjections, Auxiliary words, Empty words. Let's think step by step.
+        Answer:
+        """
+    output = model.generate_text(prompt)
+    return output
 
 def process_into_phrases(model, one_clause_sentences):
     print(one_clause_sentences)
@@ -191,7 +226,7 @@ def extract_the_negative_from_interrogative_sentence(sentence, model):
     return negative
 
 
-def get_phrases_types(phrases_in_sentences):
+def get_phrases_types(phrases_in_sentences, sentences):
     phrases_type_in_sentences = []
     for sentence in phrases_in_sentences:
         phrase_type_in_each_word = []
@@ -199,6 +234,11 @@ def get_phrases_types(phrases_in_sentences):
             phrase_type_in_each_word.append(chunk(phrase))
         phrases_type_in_sentences.append(phrase_type_in_each_word)
     return phrases_type_in_sentences
+
+
+def invert_number_noun_to_noun_number(phrases_in_sentences, phrases_type_in_sentences):
+    # invert number-noun to noun-number
+    pass 
 
 
 def remove_unnecessary_phrases(phrases_in_sentences, phrases_type_in_sentences):
@@ -210,13 +250,22 @@ def remove_unnecessary_phrases(phrases_in_sentences, phrases_type_in_sentences):
 
 def main():
     model = TextByGemini() 
-    test_sentence = "Hai thập niên đầu thế kỷ XX ở Việt Nam , trong nhiều vấn đề nhân học , nổi lên vấn đề nữ học như là một vấn đề quan trọng , thu hút sự chú ý thảo luận và tranh luận của giới trí thức , nhất là nhìn từ quan điểm của chính người phụ nữ ."#"Hiện nay, trên một số kênh truyền hình của Việt Nam có phát bản tin bằng ngôn ngữ kí hiệu nhằm năng cao đời sống tinh thần cho cộng đồng người khiếm thính."
+    test_sentence = "Tôi dám chắc không có một vị lãnh tụ , một vị tổng thống hay một vị vua hiền nào ngày trước lại sống đến mức giản dị và tiết chế như vậy ."
+    sentence_type = classify_sentence_type(model, test_sentence)
+    print(sentence_type)
     simple_sentences = split_into_simple_sentence(model, test_sentence)
-    phrases_in_sentences = process_into_phrases(model, simple_sentences)
+    simple_fitered_sentences = []
+    print(simple_sentences)
+    for sent in simple_sentences:
+        simple_fitered_sentences.append(remove_unnecessary_words_in_sent(model, sent))
+    print(simple_fitered_sentences)
+    phrases_in_sentences = process_into_phrases(model, simple_fitered_sentences)
     print(phrases_in_sentences)
-    phrases_type_in_sentences = get_phrases_types(phrases_in_sentences)
-    print(phrases_type_in_sentences)
-    print("---------------------")
+    phrases_type_in_sentences = get_phrases_types(phrases_in_sentences, simple_sentences)
+    for phrase_type in phrases_type_in_sentences:
+        print(phrase_type)
+    # print(phrases_type_in_sentences)
+        print("---------------------")
     # phrases_in_sentences, phrases_type_in_sentences = remove_unnecessary_phrases(phrases_in_sentences, phrases_type_in_sentences)
     # print(phrases_in_sentences)
     # print(phrases_type_in_sentences)
