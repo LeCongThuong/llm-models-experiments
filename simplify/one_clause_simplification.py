@@ -51,8 +51,6 @@ def generate_prompt_to_check_pos_and_neg_of_declarative_sentence(sentence):
 
 
 
-
-
 def generate_prompt_to_check_how_many_clauses_of_sentence(sentence):
     prompt = f"""
         sentence: "Nhà tôi có 4 người"
@@ -92,14 +90,14 @@ def extract_patterns_from_gemini_output(gemini_output, pattern="sent"):
 def generate_prompt_to_split_sentence_into_phrases(sentence):
     prompt = f"""
         sentence: "Nhà tôi có 4 người"
-        Split the sentence into short phrases (no more 3 words) and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement.
+        Split the sentence into short phrases (no more 2 words) and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement.
         Answer: Nhà tôi/có/4 người
         sentence: "Tôi đi siêu thị băng xe đạp."
-        Split the sentence into short phrases (no more 3 words) and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement. 
+        Split the sentence into short phrases (no more 32words) and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement. 
         Answer: Tôi/đi/siêu thị/bằng/xe đạp
         ------------------------
         sentence: "{sentence}"
-        Split the sentence into short phrases (no more 3 words) and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement. Let's think step by step. No need to explain.
+        Split the sentence into short phrases (no more 2 words) and non-overlapping words between these phrases: subject phrase, verb phrase, object phrase, adverb phrase, subject complement, object complement. Let's think step by step. No need to explain.
         Answer:
     """
     return prompt
@@ -281,6 +279,62 @@ def split_into_simple_sentence(model, sentence):
     return simple_sentence
 
 
+def _change_the_order_of_phrase(text):
+    chunk_res = chunk(text)
+    start = []
+    end = [chunk_res[-1]]
+    num_c = len(chunk_res)
+    for i in range(num_c-1):
+        if chunk_res[i][1] == 'M' and (chunk_res[i+1][1] == 'N' or chunk_res[i+1][1] == 'Np' or chunk_res[i+1][1] == 'Nc'):
+            end.append(chunk_res[i])
+        else:
+            start.append(chunk_res[i])
+    start.extend(end)
+    text = " ".join([token[0] for token in start])
+    return text
+
+def change_the_order_of_phrases(phrases_in_sentences):
+    new_phrases_in_sentences = []
+    for phrases in phrases_in_sentences:
+        new_phrases = []
+        for phrase in phrases:
+            new_phrases.append(_change_the_order_of_phrase(phrase))
+        new_phrases_in_sentences.append(new_phrases)
+    return new_phrases_in_sentences
+
+def identify_spelling_in_sentence(phrase):
+    # Noun proper phrase, number, name, will be spelling. Use POS tag to identify
+    phrase_list = []
+    flag = False
+    punc_list = []
+    for token in pos_tag(phrase):
+        if token[1] == "Np":
+            phrase_list.append((token[0].lower(), True))
+            flag = True
+        # if containg punctuation, it is not spelling
+        if token[1] == 'CH':
+            punc_list.append(token[0])
+        else:
+            if token[0].isdigit():
+                phrase_list.append((token[0].lower(), True))
+                flag = True
+            else:
+                phrase_list.append((token[0].lower(), False))
+    if flag == False:
+        for token in punc_list:
+            phrase = phrase.replace(token, "")
+        phrase_list = [(phrase.lower(), False)]
+    return phrase_list
+
+def identify_spelling_in_phrases(phrases_in_sentences):
+    new_phrases_in_sentences = []
+    for phrases in phrases_in_sentences:
+        new_phrases = []
+        for phrase in phrases:
+            new_phrases.append(identify_spelling_in_sentence(phrase))
+        new_phrases_in_sentences.append(new_phrases)
+    return new_phrases_in_sentences
+
 
 def main():
     model = TextByGemini() 
@@ -317,6 +371,10 @@ def main():
     print(more_more_more_simple_sentences)
     phrases_in_sentences = process_into_phrases(model, more_more_more_simple_sentences)
     print(phrases_in_sentences)
+    phrases_in_order = change_the_order_of_phrases(phrases_in_sentences)
+    print(phrases_in_order)
+    spelling_phrase = identify_spelling_in_phrases(phrases_in_order)
+    print(spelling_phrase)
     # print(more_simple_sentences)
     
     # simple_sentences = split_into_simple_sentence(model, test_sentence)
