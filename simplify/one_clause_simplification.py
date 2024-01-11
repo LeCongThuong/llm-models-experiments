@@ -50,24 +50,6 @@ def generate_prompt_to_check_pos_and_neg_of_declarative_sentence(sentence):
     return prompt
 
 
-def classify_sentence_type(model, sentence):
-    prompt = """
-        sentence: "Người ôm lấy người vợ xiết bao thân yêu, người bạn đời chung thủy của mình mà khóc dầm dề"
-        Classify the above sentence into one of the following types: simple, compound, complex
-        Answer: complex
-        sentence: "Tôi đi siêu thị bằng xe đạp."
-        Classify the above sentence into one of the following types: simple, compound
-        Answer: simple
-        sentence: "Tôi đi siêu thị bằng xe đạp và mua một cái bánh."
-        Classify the above sentence into one of the following types: simple, compound
-        Answer: compound
-        ------------------------
-        sentence: "{sentence}"
-        Classify the above sentence into one of the following types: simple, compound. Let's think step by step.
-        Answer:
-    """ 
-    sentence_type = model.generate_text(prompt)
-    return sentence_type
 
 
 
@@ -84,17 +66,19 @@ def generate_prompt_to_check_how_many_clauses_of_sentence(sentence):
     return prompt
 
 
-def generate_to_rewrite_sentence_with_one_clause(sentence):
+def generate_to_rewrite_sentence_with_one_clause(model, sentence):
     prompt = f"""
-        sentence: "Từ căn gác nhỏ của mình , Hải có thể nghe tất cả các âm thanh náo nhiệt , ồn ã của thủ đô ."
-        Rewrite to simple sentences that each simple sentence contains only one independent clause (require no dependent clause)
-        Answer: Hải nghe thấy âm thanh của thủ đô từ căn gác nhỏ của mình. Âm thanh của thủ đô náo nhiệt và ồn ào.
+        sentence: "Toán học là môn học khó nhất bởi vì nó có nhiều công thức."
+        The sentence is the complex sentence, therefore, rewrite to short sentences that each sentence contains only one independent clause (no dependent clause) and each sentence puts in <sent></sent>.
+        Answer: <sent>Toán học là môn học khó nhất.</sent> <sent>Nó có nhiều công thức.</sent>
         ------------------------
-        sentence: "{sentence}"
-        Rewrite to simple complete sentences that each simple sentence contains only one independent clause. Do not repeat some words. Each simple sentence put in <sent></sent>. Let's think step by step.
+        sentence: f"{sentence}"
+        The sentence is the complex sentence, therefore, rewrite to short sentences that each simple sentence contains only one independent clause (no dependent clause)and each sentence puts in <sent></sent>. Let's think step by step.
         Answer:
     """
-    return prompt
+    sentences = model.generate_text(prompt)
+    simple_sentence_list = extract_patterns_from_gemini_output(sentences, pattern="sent")
+    return simple_sentence_list
 
 def extract_patterns_from_gemini_output(gemini_output, pattern="sent"):
     simple_sent_list = []
@@ -124,17 +108,6 @@ def generate_prompt_to_split_sentence_into_phrases(sentence):
 def check_patterns_in_sentence(output):
     return output.split("/")
 
-def split_into_simple_sentence(model, test_sentence):
-    prompt = generate_prompt_to_check_how_many_clauses_of_sentence(test_sentence)
-    num_clauses = model.generate_text(prompt)
-    print("Num clauses: ", num_clauses)
-    num_clauses = re.sub("[^0-9]", "", num_clauses)
-    if int(num_clauses.strip()) > 1:
-        prompt = generate_to_rewrite_sentence_with_one_clause(test_sentence)
-        one_clause_sentences = extract_patterns_from_gemini_output(model.generate_text(prompt))
-    else:
-        one_clause_sentences = [test_sentence]
-    return one_clause_sentences
 
 def remove_unnecessary_words_in_sent(model, sent):
     prompt = f"""
@@ -247,25 +220,118 @@ def remove_unnecessary_phrases(phrases_in_sentences, phrases_type_in_sentences):
 
    pass
 
+def compound_or_simple(model, sentence):
+    prompt = f"""
+        Simple sentence is the sentence that contains only one independent clause. Compound sentence is the sentence that contains more than one independent clause. For instance:
+        sentence: "Tôi đi siêu thị bằng xe đạp."
+        Classify the above sentence into one of the following types: simple, compound
+        Answer: simple
+        sentence: "Tôi đi siêu thị bằng xe đạp và mua một cái bánh."
+        Classify the above sentence into one of the following types: simple, compound
+        Answer: compound
+        ------------------------
+        sentence: "{sentence}"
+        Classify the above sentence into one of the following types: simple, compound. Let's think step by step.
+        Answer:
+    """ 
+    sentence_type = model.generate_text(prompt)
+    return sentence_type
+
+def complex_or_simple(model, sentence):
+    prompt = f"""
+        sentence: "Tôi đi siêu thị bằng xe đạp."
+        Which types of the above sentence, choose one of the following types: simple, complex
+        Answer: simple
+        sentence: "Tôi đi siêu thị bằng xe đạp vì tôi muốn mua một cái bánh."
+        Which types of the above sentence, choose one of the following types: simple, complex
+        Answer: complex
+        ------------------------
+        sentence: "{sentence}"
+        Which types of the above sentence, choose one of the following types: simple, complex. Let's think step by step.
+        Answer:
+    """ 
+    sentence_type = model.generate_text(prompt)
+    return sentence_type
+
+
+def split_compound_into_simple_sentences(model, sentence):
+    prompt = f"""
+        Simple sentence is a sentence that includes only one independent clause. Compound sentence is a sentence that includes more than one independent clause. For instance:
+        sentence: "Tôi đi siêu thị bằng xe đạp và mua một cái bánh."
+        The sentence is a compound sentence because there are 2 independent clauses. Rewrite the sentence into simple sentences and put in tag <sent></sent>.
+        Answer: <sent>Tôi đi siêu thị bằng xe đạp </sent>. <sent>Tôi mua một cái bánh</sent>.
+        ------------------------
+        sentence: "{sentence}"
+        The sentence is a compound sentence becasue there are more than one independent clause. Rewrite the sentence into simple sentences put in tag <sent></sent>. Let's think step by step.
+        Answer:
+    """ 
+    simple_sentences = model.generate_text(prompt)
+    simple_sentences = extract_patterns_from_gemini_output(simple_sentences, pattern="sent")
+    return simple_sentences
+
+
+def split_into_simple_sentence(model, sentence):
+    prompt = f"""
+                Let’s think step by step. I want you to replace my complex sentence with simple sentence(s) and put in tag <sent></sent>. Keep the meaning same, but make them simpler.
+                Complex: {sentence}
+                Simple:
+                """
+    simple_sentence = model.generate_text(prompt)
+    simple_sentence = extract_patterns_from_gemini_output(simple_sentence, pattern="sent")
+    return simple_sentence
+
+
 
 def main():
     model = TextByGemini() 
-    test_sentence = "Tôi dám chắc không có một vị lãnh tụ , một vị tổng thống hay một vị vua hiền nào ngày trước lại sống đến mức giản dị và tiết chế như vậy ."
-    sentence_type = classify_sentence_type(model, test_sentence)
+    test_sentence = "Công cuộc đổi mới văn học , thực tế đã diễn ra từ sau 1975 , tuy nhiên , trong khoảng thời gian 1975 - 1985 , giới văn nghệ chỉ mới dò đường .",
+
+    print(test_sentence)
+    sentence_type = compound_or_simple(model, test_sentence)
     print(sentence_type)
-    simple_sentences = split_into_simple_sentence(model, test_sentence)
-    simple_fitered_sentences = []
-    print(simple_sentences)
+    if sentence_type.strip() == "compound":
+        simple_sentences = split_compound_into_simple_sentences(model, test_sentence)
+        print(simple_sentences)
+    else:
+        simple_sentences = [test_sentence]
+
+    more_simple_sentences = []
     for sent in simple_sentences:
-        simple_fitered_sentences.append(remove_unnecessary_words_in_sent(model, sent))
-    print(simple_fitered_sentences)
-    phrases_in_sentences = process_into_phrases(model, simple_fitered_sentences)
+        is_complex = complex_or_simple(model, sent)
+        print(sent, "----", is_complex)
+        if is_complex.strip() == "complex":
+            one_clause_sentences = generate_to_rewrite_sentence_with_one_clause(model, sent)
+            print(one_clause_sentences)
+            more_simple_sentences.extend(one_clause_sentences)
+        else:
+            more_simple_sentences.extend([sent])  
+
+    more_more_simple_sentences = []
+    for sent in more_simple_sentences:
+        more_more_simple_sentences.extend(split_into_simple_sentence(model, sent))
+    
+    more_more_more_simple_sentences = []
+    for sent in more_more_simple_sentences:
+       filter_sent = remove_unnecessary_words_in_sent(model, sent)
+       more_more_more_simple_sentences.append(filter_sent)
+    print(more_more_more_simple_sentences)
+    phrases_in_sentences = process_into_phrases(model, more_more_more_simple_sentences)
     print(phrases_in_sentences)
-    phrases_type_in_sentences = get_phrases_types(phrases_in_sentences, simple_sentences)
-    for phrase_type in phrases_type_in_sentences:
-        print(phrase_type)
+    # print(more_simple_sentences)
+    
+    # simple_sentences = split_into_simple_sentence(model, test_sentence)
+    # simple_fitered_sentences = []
+    # print(simple_sentences)
+    # for sent in simple_sentences:
+    #     simple_fitered_sentences.append(remove_unnecessary_words_in_sent(model, sent))
+    # print(simple_fitered_sentences)
+    # phrases_in_sentences = process_into_phrases(model, simple_fitered_sentences)
+    # print(phrases_in_sentences)
+    # phrases_type_in_sentences = get_phrases_types(phrases_in_sentences, simple_sentences)
+    # for phrase_type in phrases_type_in_sentences:
+    #     print(phrase_type)
     # print(phrases_type_in_sentences)
-        print("---------------------")
+    #    print("---------------------")
     # phrases_in_sentences, phrases_type_in_sentences = remove_unnecessary_phrases(phrases_in_sentences, phrases_type_in_sentences)
     # print(phrases_in_sentences)
     # print(phrases_type_in_sentences)

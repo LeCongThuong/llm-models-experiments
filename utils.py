@@ -10,7 +10,11 @@ class TextByGemini:
         self.model = genai.GenerativeModel('gemini-pro')
 
     def generate_text(self, prompt):
-        return self.model.generate_content(prompt).text
+        return self.model.generate_content(prompt,    
+                                           generation_config=genai.types.GenerationConfig(
+                                            # Only one candidate for now.
+                                            candidate_count=1,
+                                            temperature=.7)).text
 
 def read_json_file(file_path):
     with open(file_path, 'r') as f:
