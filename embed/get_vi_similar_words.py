@@ -24,7 +24,7 @@ def query_gemini_embedding(db_path, query_word_list, collection_name, k_neighbor
     )
     tokenized_query_word_list = [word.replace(" ", "_") for word in query_word_list]
     results = collection.query(
-            query_texts=tokenized_query_word_list, n_results=k_neighbors, include=["documents", "metadatas"]
+            query_texts=tokenized_query_word_list, n_results=k_neighbors, include=["documents", "metadatas", "distances"]
         )
     return results['documents'], results['metadatas']
 

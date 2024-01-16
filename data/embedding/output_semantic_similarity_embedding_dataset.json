@@ -1,51 +1,14 @@
 [
     {
-        "input": "hiện nay",
-        "output": [
-            "hiện_nay\n",
-            "hiện_đại\n"
-        ],
-        "gt": "bây giờ"
-    },
-    {
-        "input": "đồng bào",
-        "output": [
-            "đồng_bào\n",
-            "báo_động\n"
-        ],
-        "gt": "đồng hương"
-    },
-    {
         "input": "động viên",
         "output": [
             "động_viên\n",
             "công_viên\n"
         ],
-        "gt": "khích lệ"
-    },
-    {
-        "input": "sa thải",
-        "output": [
-            "sa_thải\n",
-            "thái_độ\n"
-        ],
-        "gt": "đuổi việc"
-    },
-    {
-        "input": "đóng góp",
-        "output": [
-            "đóng_góp\n",
-            "góp_ý\n"
-        ],
-        "gt": "hỗ trợ"
-    },
-    {
-        "input": "đun nấu",
-        "output": [
-            "đun_nấu\n",
-            "ấm_đun_nước\n"
-        ],
-        "gt": "nấu nướng"
+        "gt": {
+            "vi": "khích lệ",
+            "sent": "Nhà trường khích lệ học sinh học tập chăm chỉ"
+        }
     },
     {
         "input": "đoàn tụ",
@@ -53,7 +16,21 @@
             "đoàn_tụ\n",
             "đoàn_cải_lương\n"
         ],
-        "gt": "sum vầy"
+        "gt": {
+            "vi": "sum vầy",
+            "sent": "Mọi người sum vầy bên bàn ăn"
+        }
+    },
+    {
+        "input": "đồng bào",
+        "output": [
+            "đồng_bào\n",
+            "báo_động\n"
+        ],
+        "gt": {
+            "vi": "đồng hương",
+            "sent": "Anh ta và tôi là đồng hương"
+        }
     },
     {
         "input": "đối thoại",
@@ -61,15 +38,10 @@
             "đối_thoại\n",
             "điện_thoại\n"
         ],
-        "gt": "giao tiếp"
-    },
-    {
-        "input": "giải quyết",
-        "output": [
-            "giải_quyết\n",
-            "gửi_quà\n"
-        ],
-        "gt": "xử lý"
+        "gt": {
+            "vi": "nói chuyện",
+            "sent": "Nhà trường nói chuyện với phụ huynh về việc học của con em"
+        }
     },
     {
         "input": "giám sát",
@@ -77,6 +49,64 @@
             "giám_sát\n",
             "giám_đốc\n"
         ],
-        "gt": "theo dõi"
+        "gt": {
+            "vi": "theo dõi",
+            "sent": "Camera theo dõi nhân viên 24/7"
+        }
+    },
+    {
+        "input": "giải quyết",
+        "output": [
+            "giải_quyết\n",
+            "gửi_quà\n"
+        ],
+        "gt": {
+            "vi": "xử lý",
+            "sent": "Anh ta xử lý vấn đề rất nhanh chóng"
+        }
+    },
+    {
+        "input": "hiện nay",
+        "output": [
+            "hiện_nay\n",
+            "hiện_đại\n"
+        ],
+        "gt": {
+            "vi": "bây giờ",
+            "sent": "Bây giời tôi đang ở nhà"
+        }
+    },
+    {
+        "input": "đóng góp",
+        "output": [
+            "đóng_góp\n",
+            "góp_ý\n"
+        ],
+        "gt": {
+            "vi": "hỗ trợ",
+            "sent": "Việt Nam hỗ trợ nước bạn tham gia cứu hộ người mất tích"
+        }
+    },
+    {
+        "input": "sa thải",
+        "output": [
+            "sa_thải\n",
+            "thái_độ\n"
+        ],
+        "gt": {
+            "vi": "đuổi việc",
+            "sent": "Công ty đuổi việc anh ta vì anh ta không làm việc chăm chỉ"
+        }
+    },
+    {
+        "input": "đun nấu",
+        "output": [
+            "đun_nấu\n",
+            "ấm_đun_nước\n"
+        ],
+        "gt": {
+            "vi": "nấu nướng",
+            "sent": "Anh ta nấu nuớng rất ngon"
+        }
     }
 ]

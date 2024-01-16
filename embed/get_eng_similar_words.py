@@ -26,7 +26,7 @@ def query_gemini_embedding(db_path, query_word_list, collection_name, k_neighbor
     results = collection.query(
             query_texts=tokenized_query_word_list, n_results=k_neighbors, include=["documents", "metadatas"]
         )
-    return results['documents'], results['metadatas']
+    return results['documents'], results['nd']
 
 def main():
     test_dataset_path = '../data/embedding/test_dataset_vi_en.json'
