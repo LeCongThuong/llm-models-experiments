@@ -40,7 +40,7 @@ def split_sentence(model, sentence):
 
 def compress_sentence(model, sentence):
     prompt = f"""
-    simplify sentence by dropping (deleting/drop/ removes unimportant parts of input sentence such as unnecessary words, phrases, clauses, etc.)
+    simplify sentence by deleting/dropping/removing unnecessary words, phrases, etc.)
     Let’s think step by step as vietnamese linguistic expert and answer in Vietnamese. Put the vietnamse output in the tag <sent></sent>. If the sentence is already simple, just put the output in the tag <sent>.
     sentence: "{sentence}" 
     """ 
@@ -73,12 +73,12 @@ def simplify_step_by_step(sent, model):
     paraphrasing_sent = extract_patterns_from_gemini_output(paraphrasing_sent)
     paraphrasing_sent = " ".join(paraphrasing_sent)
     print("Paraphasal sent: ", paraphrasing_sent)
-    compress_sent = compress_sentence(model, paraphrasing_sent)
-    print(compress_sent)
-    compress_sent = extract_patterns_from_gemini_output(compress_sent)
-    compress_sent = " ".join(compress_sent)
-    print("Compress sent: ", compress_sent)
-    return compress_sent
+    # compress_sent = compress_sentence(model, paraphrasing_sent)
+    # print(compress_sent)
+    # compress_sent = extract_patterns_from_gemini_output(compress_sent)
+    # compress_sent = " ".join(compress_sent)
+    # print("Compress sent: ", compress_sent)
+    return paraphrasing_sent
 
 if __name__ == '__main__':
     model = TextByGemini()
@@ -96,7 +96,7 @@ if __name__ == '__main__':
                 print(f"Error: {complex_sentence}")
                 continue
         simple_sentences_dict[difficulty_level] = sim_complex_sentences
-    with open('../data/simplification/step_by_step_simple_sentences.json', 'w', encoding="utf-8") as f:
+    with open('../data/simplification/step_by_step_2_simple_sentences.json', 'w', encoding="utf-8") as f:
         json.dump(simple_sentences_dict, f, indent=4, ensure_ascii=False)
         
 

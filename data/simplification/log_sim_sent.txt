@@ -1,0 +1,292 @@
+ưởng dễ trả lời lại hóa ra quá khó .
+Lexical sent:  Câu hỏi tưởng dễ đáp lại quá khó.
+<sent>Câu hỏi tưởng dễ nhưng đáp lại thì quá khó.</sent>
+Split sent:  Câu hỏi tưởng dễ nhưng đáp lại thì quá khó.
+<sent>Câu hỏi tưởng dễ nhưng đáp lại thì quá khó.</sent>
+Paraphasal sent:  Câu hỏi tưởng dễ nhưng đáp lại thì quá khó.
+ 10%|████████████▊                                                                                                                   | 1/10 [00:06<01:00,  6.68s/it]Mỗi lần vào hè em thấy cây phượng vĩ ở trường em nở hoa và hoa phượng màu đỏ tươi .
+Lexical sent:  Hàng năm vào mùa hè, cây phượng vĩ ở trường em nở những chùm hoa màu đỏ tươi.
+<sent>Mỗi năm vào mùa hè, cây phượng vĩ ở trường em nở hoa.</sent>
+<sent>Hoa phượng vĩ có màu đỏ tươi.</sent>
+<sent>Hoa phượng vĩ nở thành từng chùm.</sent>
+Split sent:  Mỗi năm vào mùa hè, cây phượng vĩ ở trường em nở hoa. Hoa phượng vĩ có màu đỏ tươi. Hoa phượng vĩ nở thành từng chùm.
+<sent>Mùa hè hàng năm, cây phượng vĩ trong trường em nở hoa đỏ tươi thành từng chùm.</sent>
+Paraphasal sent:  Mùa hè hàng năm, cây phượng vĩ trong trường em nở hoa đỏ tươi thành từng chùm.
+ 20%|█████████████████████████▌                                                                                                      | 2/10 [00:12<00:50,  6.32s/it]Nó quay nhanh đến mức không thể thấy rõ hình dạng , mà chỉ thấy là một khối cầu dẹp màu trắng và nó có thể quay trên đầu nhọn được .
+Lexical sent:  Nó quay nhanh đến mức không nhìn thấy hình dạng, chỉ thấy là một khối cầu dẹp màu trắng và có thể quay trên đầu nhọn được.
+<sent>Nó quay nhanh đến mức không nhìn thấy hình dạng.</sent>
+<sent>Chỉ thấy là một khối cầu dẹp màu trắng.</sent>
+<sent>Khối cầu đó có thể quay trên đầu nhọn được.</sent>
+Split sent:  Nó quay nhanh đến mức không nhìn thấy hình dạng. Chỉ thấy là một khối cầu dẹp màu trắng. Khối cầu đó có thể quay trên đầu nhọn được.
+<sent>Nó quay nhanh tới mức không nhìn thấy được hình dạng, chỉ thấy một khối cầu dẹp màu trắng có thể quay trên đầu nhọn.</sent>
+Paraphasal sent:  Nó quay nhanh tới mức không nhìn thấy được hình dạng, chỉ thấy một khối cầu dẹp màu trắng có thể quay trên đầu nhọn.
+ 30%|██████████████████████████████████████▍                                                                                         | 3/10 [00:18<00:42,  6.02s/it]Đôi cánh to khỏe , cái mỏ cứng , đôi chân chắc cùng với những móng nhọn cong dài đã tạo cho Đại Bàng ưu thế lớn : nó cào toác da và mổ lòi một mắt Mèo Mẹ .
+Lexical sent:  Đôi cánh to khỏe, cái mỏ cứng, đôi chân chắc cùng với những móng nhọn cong dài đã giúp Đại Bàng dễ dàng tấn công và làm bị thương Mèo Mẹ.
+<sent>Đôi cánh của Đại Bàng to và khỏe.</sent>
+<sent>Cái mỏ của Đại Bàng cứng.</sent>
+<sent>Đôi chân của Đại Bàng chắc.</sent>
+<sent>Những móng nhọn cong dài của Đại Bàng rất sắc.</sent>
+<sent>Những đặc điểm này giúp Đại Bàng dễ dàng tấn công và làm bị thương Mèo Mẹ.</sent>
+Split sent:  Đôi cánh của Đại Bàng to và khỏe. Cái mỏ của Đại Bàng cứng. Đôi chân của Đại Bàng chắc. Những móng nhọn cong dài của Đại Bàng rất sắc. Những đặc điểm này giúp Đại Bàng dễ dàng tấn công và làm bị thương Mèo Mẹ.
+<sent>Đại Bàng có đôi cánh to và khỏe, cái mỏ cứng, đôi chân chắc, những móng nhọn cong dài và sắc giúp nó dễ tấn công và làm bị thương Mèo Mẹ.</sent>
+Paraphasal sent:  Đại Bàng có đôi cánh to và khỏe, cái mỏ cứng, đôi chân chắc, những móng nhọn cong dài và sắc giúp nó dễ tấn công và làm bị thương Mèo Mẹ.
+ 40%|███████████████████████████████████████████████████▏                                                                            | 4/10 [00:26<00:40,  6.70s/it]Mỗi dịp về Hà Nội , Hải thích ngồi lặng hàng giờ để nghe bạn anh trình bày bản nhạc Ánh trăng của Bét-tô-ven bằng đàn pi-a-nô .
+Lexical sent:  Mỗi lần đến Hà Nội, Hải thích ngồi im hàng giờ nghe bạn mình chơi bản nhạc Ánh trăng của Beethoven bằng đàn dương cầm.
+<sent>Mỗi lần đến Hà Nội, Hải thích ngồi im hàng giờ.</sent>
+<sent>Anh thích nghe bạn mình chơi bản nhạc Ánh trăng của Beethoven bằng đàn dương cầm.</sent>
+Split sent:  Mỗi lần đến Hà Nội, Hải thích ngồi im hàng giờ. Anh thích nghe bạn mình chơi bản nhạc Ánh trăng của Beethoven bằng đàn dương cầm.
+<sent>Mỗi khi Hải đến Hà Nội, anh hay ngồi im hàng giờ đồng hồ để nghe bạn mình chơi đàn dương cầm bản nhạc Ánh trăng của Beethoven</sent>
+Paraphasal sent:  Mỗi khi Hải đến Hà Nội, anh hay ngồi im hàng giờ đồng hồ để nghe bạn mình chơi đàn dương cầm bản nhạc Ánh trăng của Beethoven
+ 50%|████████████████████████████████████████████████████████████████                                                                | 5/10 [00:32<00:32,  6.49s/it]Từ căn gác nhỏ của mình , Hải có thể nghe tất cả các âm thanh náo nhiệt , ồn ã của thủ đô .
+Lexical sent:  Từ cửa sổ nhà mình, Hải có thể nghe thấy tất cả các âm thanh náo nhiệt, ồn ào của thành phố.
+<sent>Từ cửa sổ nhà mình, Hải nghe thấy.</sent>
+<sent>Hải nghe thấy tất cả các âm thanh náo nhiệt, ồn ào của thành phố.</sent>
+Split sent:  Từ cửa sổ nhà mình, Hải nghe thấy. Hải nghe thấy tất cả các âm thanh náo nhiệt, ồn ào của thành phố.
+<sent>Từ cửa sổ nhà mình, Hải nghe thấy tất cả những âm thanh náo nhiệt, ồn ào của thành phố.</sent>
+Paraphasal sent:  Từ cửa sổ nhà mình, Hải nghe thấy tất cả những âm thanh náo nhiệt, ồn ào của thành phố.
+ 60%|████████████████████████████████████████████████████████████████████████████▊                                                   | 6/10 [00:38<00:25,  6.44s/it]Em đã đổi một con chó lấy hai chú mèo con .
+Lexical sent:  Tôi đã dùng một con chó để đổi lấy hai con mèo con.
+<sent>Tôi đã dùng một con chó để đổi lấy hai con mèo con.</sent>
+Split sent:  Tôi đã dùng một con chó để đổi lấy hai con mèo con.
+<sent>Tôi đổi một con chó lấy hai con mèo con.</sent>
+Paraphasal sent:  Tôi đổi một con chó lấy hai con mèo con.
+ 70%|█████████████████████████████████████████████████████████████████████████████████████████▌                                      | 7/10 [00:44<00:19,  6.35s/it]Những cây thông mọc thành cụm thường nối rễ với nhau , đói no cùng chia sẻ .
+Lexical sent:  Những cây thông mọc theo nhóm thường chia sẻ rễ với nhau.
+<sent>Những cây thông mọc theo nhóm thường chia sẻ rễ với nhau.</sent>
+Split sent:  Những cây thông mọc theo nhóm thường chia sẻ rễ với nhau.
+<sent>Cây thông mọc theo nhóm thường chia sẻ chung một hệ thống rễ.</sent>
+Paraphasal sent:  Cây thông mọc theo nhóm thường chia sẻ chung một hệ thống rễ.
+ 80%|██████████████████████████████████████████████████████████████████████████████████████████████████████▍                         | 8/10 [00:50<00:12,  6.01s/it]Sau đám tang bà , An trở lại lớp , lòng nặng trĩu nỗi buồn .
+Lexical sent:  Sau khi bà mất, An quay trở lại trường, lòng buồn bã.
+<sent>Sau khi bà mất, An quay trở lại trường.</sent>
+<sent>Lòng An buồn bã.</sent>
+Split sent:  Sau khi bà mất, An quay trở lại trường. Lòng An buồn bã.
+<sent>Sau khi bà mất, An buồn bã trở lại trường.</sent>
+Paraphasal sent:  Sau khi bà mất, An buồn bã trở lại trường.
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏            | 9/10 [00:55<00:05,  5.68s/it]Thầy biết em nhất định sẽ làm !
+Lexical sent:  Thầy tin chắc rằng em sẽ làm được!
+<sent>Thầy tin chắc rằng em sẽ làm được.</sent>
+Split sent:  Thầy tin chắc rằng em sẽ làm được.
+<sent>Thầy tin chắc em sẽ làm được.</sent>
+Paraphasal sent:  Thầy tin chắc em sẽ làm được.
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:59<00:00,  6.00s/it]
+  0%|                                                                                                                                                 | 0/10 [00:00<?, ?it/s]Thỉnh thoảng , muốn thử sự lợi hại của những chiếc vuốt , tôi co cẳng lên , đạp phanh phách vào các ngọn cỏ .
+The `response.parts` quick accessor only works for a single candidate, but none were returned. Check the `response.prompt_feedback` to see if the prompt was blocked.
+Error: Thỉnh thoảng , muốn thử sự lợi hại của những chiếc vuốt , tôi co cẳng lên , đạp phanh phách vào các ngọn cỏ .
+ 10%|█████████████▋                                                                                                                           | 1/10 [00:03<00:28,  3.21s/it]Học vấn không chỉ là chuyện đọc sách , nhưng đọc sách vẫn là một con đường quan trọng của học vấn .
+Lexical sent:  Học vấn không chỉ là chuyện đọc sách, nhưng đọc sách vẫn là cách quan trọng để có học vấn.
+<sent>Học vấn không chỉ là chuyện đọc sách.</sent>
+<sent>Nhưng đọc sách vẫn là cách quan trọng để có học vấn.</sent>
+Split sent:  Học vấn không chỉ là chuyện đọc sách. Nhưng đọc sách vẫn là cách quan trọng để có học vấn.
+<sent>Học vấn không chỉ đến từ việc đọc sách. Tuy nhiên, đọc sách vẫn là một cách quan trọng để có được học vấn.</sent>
+Paraphasal sent:  Học vấn không chỉ đến từ việc đọc sách. Tuy nhiên, đọc sách vẫn là một cách quan trọng để có được học vấn.
+ 20%|███████████████████████████▍                                                                                                             | 2/10 [00:09<00:41,  5.18s/it]Thế mà hai nhà Đinh , Lê lại theo ý riêng mình , khinh thường mệnh trời , không noi theo dấu cũ của Thương , Chu , cứ đóng yên đô thành ở nơi đây , khiến cho triều đại không được lâu bền , số vận ngắn ngủi , trăm họ phải hao tốn , muôn vật không được thích nghi .
+Lexical sent:  Hai nhà Đinh, Lê không noi theo lời dạy của Thương, Chu mà cứ đóng đô tại đây, khiến cho triều đại không được lâu bền, số vận ngắn ngủi, trăm họ phải hao tốn, muôn vật không được thích nghi.
+<sent>Hai nhà Đinh, Lê không noi theo lời dạy của Thương, Chu.</sent>
+<sent>Họ cứ đóng đô tại đây.</sent>
+<sent>Điều này khiến cho triều đại không được lâu bền.</sent>
+<sent>Số vận ngắn ngủi.</sent>
+<sent>Trăm họ phải hao tốn.</sent>
+<sent>Muôn vật không được thích nghi.</sent>
+Split sent:  Hai nhà Đinh, Lê không noi theo lời dạy của Thương, Chu. Họ cứ đóng đô tại đây. Điều này khiến cho triều đại không được lâu bền. Số vận ngắn ngủi. Trăm họ phải hao tốn. Muôn vật không được thích nghi.
+<sent>Hai nhà Đinh, Lê không noi theo lời dạy của Thương, Chu. Họ cứ ở tại đây. Điều này khiến triều đại không được lâu bền. Số vận ngắn ngủi. Trăm họ phải hao tốn. Muôn vật không thích nghi.</sent>
+Paraphasal sent:  Hai nhà Đinh, Lê không noi theo lời dạy của Thương, Chu. Họ cứ ở tại đây. Điều này khiến triều đại không được lâu bền. Số vận ngắn ngủi. Trăm họ phải hao tốn. Muôn vật không thích nghi.
+ 30%|█████████████████████████████████████████                                                                                                | 3/10 [00:23<01:02,  8.98s/it]Thế rồi một hôm , Lạc Long Quân vốn quen ở nước cảm thấy mình không thể sống mãi trên cạn được , đành từ biệt Âu Cơ và đàn con để trở về thủy cung .
+Lexical sent:  Một hôm nọ, Lạc Long Quân vốn quen sống ở nước nên cảm thấy không thể sống trên cạn được nữa, đành phải tạm biệt Âu Cơ và đàn con để trở về cung điện dưới nước.
+<sent>Một hôm, Lạc Long Quân cảm thấy không thể sống trên cạn được nữa.</sent>
+<sent>Ông đành phải tạm biệt Âu Cơ và đàn con.</sent>
+<sent>Ông trở về cung điện dưới nước.</sent>
+Split sent:  Một hôm, Lạc Long Quân cảm thấy không thể sống trên cạn được nữa. Ông đành phải tạm biệt Âu Cơ và đàn con. Ông trở về cung điện dưới nước.
+<sent>Một hôm, Lạc Long Quân cảm thấy không thể sống trên cạn được nữa, nên ông đành phải tạm biệt Âu Cơ và đàn con, rồi trở về cung điện dưới nước.</sent>
+Paraphasal sent:  Một hôm, Lạc Long Quân cảm thấy không thể sống trên cạn được nữa, nên ông đành phải tạm biệt Âu Cơ và đàn con, rồi trở về cung điện dưới nước.
+ 40%|██████████████████████████████████████████████████████▊                                                                                  | 4/10 [00:30<00:49,  8.18s/it]Căn nhà mình chỉ tạm ngăn nắp , gọn gàng từ khi con ngủ cho đến sáng hôm sau .
+Lexical sent:  Nhà mình chỉ ngăn nắp, gọn gàng từ lúc con ngủ đến sáng hôm sau.
+<sent>Nhà mình chỉ ngăn nắp, gọn gàng từ lúc con ngủ.</sent>
+<sent>Sáng hôm sau, nhà mình lại bừa bộn, lộn xộn.</sent>
+Split sent:  Nhà mình chỉ ngăn nắp, gọn gàng từ lúc con ngủ. Sáng hôm sau, nhà mình lại bừa bộn, lộn xộn.
+<sent>Nhà mình chỉ sạch sẽ, gọn gàng lúc con ngủ. Sáng hôm sau, nhà mình lại bừa bộn, lộn xộn.</sent>
+Paraphasal sent:  Nhà mình chỉ sạch sẽ, gọn gàng lúc con ngủ. Sáng hôm sau, nhà mình lại bừa bộn, lộn xộn.
+ 50%|████████████████████████████████████████████████████████████████████▌                                                                    | 5/10 [00:39<00:42,  8.56s/it]Tôi dám chắc không có một vị lãnh tụ , một vị tổng thống hay một vị vua hiền nào ngày trước lại sống đến mức giản dị và tiết chế như vậy .
+Lexical sent:  Tôi chắc chắn rằng không có nhà lãnh đạo, tổng thống hay vua nào trong quá khứ sống giản dị và tiết kiệm như vậy.
+<sent>Tôi chắc chắn rằng không có nhà lãnh đạo, tổng thống hay vua nào trong quá khứ sống giản dị như vậy.</sent>
+<sent>Họ không tiết kiệm như vậy.</sent>
+Split sent:  Tôi chắc chắn rằng không có nhà lãnh đạo, tổng thống hay vua nào trong quá khứ sống giản dị như vậy. Họ không tiết kiệm như vậy.
+<sent>Tôi chắc chắn rằng không có nhà lãnh đạo, tổng thống hay vua nào trong quá khứ sống giản dị như vậy. Họ không tiết kiệm như vậy.</sent>
+Paraphasal sent:  Tôi chắc chắn rằng không có nhà lãnh đạo, tổng thống hay vua nào trong quá khứ sống giản dị như vậy. Họ không tiết kiệm như vậy.
+ 60%|██████████████████████████████████████████████████████████████████████████████████▏                                                      | 6/10 [00:46<00:31,  7.95s/it]Lịch sử ta đã có nhiều cuộc kháng chiến vĩ đại chứng tỏ tinh thần yêu nước của dân ta .
+Lexical sent:  Lịch sử ta đã có nhiều cuộc chiến tranh lớn, cho thấy tinh thần yêu nước của dân tộc ta.
+<sent>Lịch sử của chúng ta đã có nhiều cuộc chiến tranh lớn.</sent>
+<sent>Những cuộc chiến tranh đó cho thấy tinh thần yêu nước của dân tộc ta.</sent>
+Split sent:  Lịch sử của chúng ta đã có nhiều cuộc chiến tranh lớn. Những cuộc chiến tranh đó cho thấy tinh thần yêu nước của dân tộc ta.
+<sent>Lịch sử của chúng ta đã chứng kiến nhiều cuộc chiến tranh lớn, qua đó thể hiện tinh thần yêu nước của dân tộc ta.</sent>
+Paraphasal sent:  Lịch sử của chúng ta đã chứng kiến nhiều cuộc chiến tranh lớn, qua đó thể hiện tinh thần yêu nước của dân tộc ta.
+ 70%|███████████████████████████████████████████████████████████████████████████████████████████████▉                                         | 7/10 [00:52<00:22,  7.42s/it]Dọc đường thấy mấy cậu nhỏ trạc bằng tuổi tôi áo quần tươm tất , nhí nhảnh gọi tên nhau hay trao sách vở cho nhau xem mà tôi thèm .
+Lexical sent:  Tôi thấy mấy bạn nhỏ bằng tuổi mình quần áo chỉnh tề, vui vẻ gọi tên nhau hay đưa sách vở cho nhau xem mà tôi thấy thèm.
+<sent>Tôi thấy mấy bạn nhỏ bằng tuổi mình quần áo chỉnh tề, vui vẻ gọi tên nhau hay đưa sách vở cho nhau xem.</sent>
+<sent>Tôi thấy thèm.</sent>
+Split sent:  Tôi thấy mấy bạn nhỏ bằng tuổi mình quần áo chỉnh tề, vui vẻ gọi tên nhau hay đưa sách vở cho nhau xem. Tôi thấy thèm.
+<sent>Tôi thấy những bạn nhỏ bằng tuổi mình ăn mặc chỉnh tề, vui vẻ gọi tên nhau hoặc đưa sách vở cho nhau xem. Tôi rất thèm.</sent>
+Paraphasal sent:  Tôi thấy những bạn nhỏ bằng tuổi mình ăn mặc chỉnh tề, vui vẻ gọi tên nhau hoặc đưa sách vở cho nhau xem. Tôi rất thèm.
+ 80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                           | 8/10 [01:02<00:16,  8.32s/it]Tình yêu thương , một tình yêu thương thực sự và nồng nàn lần đầu tiên phát sinh ra bên trong nó .
+Lexical sent:  Tình yêu chân thực và mãnh liệt lần đầu tiên xuất hiện trong đó.
+<sent>Tình yêu chân thực và mãnh liệt lần đầu tiên xuất hiện trong đó.</sent>
+Split sent:  Tình yêu chân thực và mãnh liệt lần đầu tiên xuất hiện trong đó.
+<sent>Một tình yêu đích thực và mãnh liệt lần đầu tiên được thể hiện trong đó.</sent>
+Paraphasal sent:  Một tình yêu đích thực và mãnh liệt lần đầu tiên được thể hiện trong đó.
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎             | 9/10 [01:10<00:08,  8.09s/it]Bây giờ nó không muốn làm nông dân nữa mà muốn làm một bà nhất phẩm phu nhân .
+Lexical sent:  Bây giờ nó không muốn làm nông dân nữa mà muốn làm bà giàu có.
+<sent>Giờ nó không muốn làm nông dân nữa.</sent>
+<sent>Mà muốn làm bà giàu có.</sent>
+Split sent:  Giờ nó không muốn làm nông dân nữa. Mà muốn làm bà giàu có.
+<sent></sent>Giờ nó không còn muốn làm nông dân nữa, mà muốn làm bà giàu có.</sent>
+Paraphasal sent:  
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:15<00:00,  7.52s/it]
+  0%|                                                                                                                                                 | 0/10 [00:00<?, ?it/s]Mị Châu đâ chết , Trọng Thủy thương tiếc khôn cùng , khi đi tắm tưởng như thấy bóng dáng Mị Châu , bèn lao đầu xuống giếng mà chết .
+The `response.parts` quick accessor only works for a single candidate, but none were returned. Check the `response.prompt_feedback` to see if the prompt was blocked.
+Error: Mị Châu đâ chết , Trọng Thủy thương tiếc khôn cùng , khi đi tắm tưởng như thấy bóng dáng Mị Châu , bèn lao đầu xuống giếng mà chết .
+ 10%|█████████████▋                                                                                                                           | 1/10 [00:02<00:21,  2.34s/it]Người ôm lấy người vợ xiết bao thân yêu , người bạn đời chung thủy của mình mà khóc dầm dề .
+Lexical sent:  Anh ôm lấy người vợ thân yêu, người bạn đời chung thủy của mình và khóc nức nở.
+<sent>Anh ôm lấy người vợ thân yêu của mình.</sent>
+<sent>Người vợ thân yêu đó chính là người bạn đời chung thủy của anh.</sent>
+<sent>Anh khóc nức nở trong vòng tay người ấy.</sent>
+Split sent:  Anh ôm lấy người vợ thân yêu của mình. Người vợ thân yêu đó chính là người bạn đời chung thủy của anh. Anh khóc nức nở trong vòng tay người ấy.
+<sent>Anh ôm chặt người vợ yêu dấu của mình. Cô ấy chính là người bạn đời thủy chung của anh. Anh khóc nức nở trong vòng tay cô.</sent>
+Paraphasal sent:  Anh ôm chặt người vợ yêu dấu của mình. Cô ấy chính là người bạn đời thủy chung của anh. Anh khóc nức nở trong vòng tay cô.
+ 20%|███████████████████████████▍                                                                                                             | 2/10 [00:10<00:48,  6.01s/it]Ta làm điều đó vì nhân phẩm của ta , để xóa bỏ vết ô nhục , để bảo vệ uy tín và danh dự của dòng họ lừng lẫy tiếng tăm của ta .
+Lexical sent:  Chúng ta làm vậy vì danh dự, để xóa bỏ sự xấu hổ, để bảo vệ uy tín và danh tiếng của dòng họ nổi tiếng của chúng ta.
+<sent>Chúng ta làm vậy vì danh dự.</sent>
+<sent>Chúng ta làm vậy để xóa bỏ sự xấu hổ.</sent>
+<sent>Chúng ta làm vậy để bảo vệ uy tín và danh tiếng của dòng họ nổi tiếng của chúng ta.</sent>
+Split sent:  Chúng ta làm vậy vì danh dự. Chúng ta làm vậy để xóa bỏ sự xấu hổ. Chúng ta làm vậy để bảo vệ uy tín và danh tiếng của dòng họ nổi tiếng của chúng ta.
+<sent>Chúng ta làm vậy để bảo vệ danh tiếng dòng họ nổi tiếng của chúng ta, xóa bỏ sự xấu hổ và danh dự.</sent>
+Paraphasal sent:  Chúng ta làm vậy để bảo vệ danh tiếng dòng họ nổi tiếng của chúng ta, xóa bỏ sự xấu hổ và danh dự.
+ 30%|█████████████████████████████████████████                                                                                                | 3/10 [00:17<00:44,  6.36s/it]Giờ đây , nàng đang đứng trước mặt ta , nhưng trông thấy nàng , ta không chịu nổi , chẳng khác nào ánh sáng đối với người bị đau mắt .
+Lexical sent:  Bây giờ nàng đang đứng trước mặt ta, nhưng nhìn thấy nàng, ta không chịu nổi, chẳng khác nào ánh sáng đối với người bị đau mắt.
+<sent>Nàng đang đứng trước mặt ta.</sent>
+<sent>Nhưng nhìn thấy nàng, ta không chịu nổi.</sent>
+<sent>Như ánh sáng đối với người bị đau mắt.</sent>
+Split sent:  Nàng đang đứng trước mặt ta. Nhưng nhìn thấy nàng, ta không chịu nổi. Như ánh sáng đối với người bị đau mắt.
+<sent>Nàng đứng trước mặt ta. Ta nhìn thấy nàng nhưng không chịu nổi. Như ánh sáng đối với người bị đau mắt.</sent>
+Paraphasal sent:  Nàng đứng trước mặt ta. Ta nhìn thấy nàng nhưng không chịu nổi. Như ánh sáng đối với người bị đau mắt.
+ 40%|██████████████████████████████████████████████████████▊                                                                                  | 4/10 [00:24<00:39,  6.52s/it]Thầy cũng khôn , sợ nhỡ sai , người nào biết thì xấu hổ , mới bảo học trò đọc khẽ , tuy vậy , trong lòng vẫn thấp thỏm .
+Lexical sent:  Thầy cũng khôn ngoan, sợ nhỡ sai thì xấu hổ, nên mới bảo học trò đọc khẽ, tuy vậy, trong lòng vẫn lo lắng.
+<sent>Thầy cũng khôn ngoan.</sent>
+<sent>Thầy sợ nhỡ sai thì xấu hổ.</sent>
+<sent>Nên thầy mới bảo học trò đọc khẽ.</sent>
+<sent>Tuy vậy, trong lòng thầy vẫn lo lắng.</sent>
+Split sent:  Thầy cũng khôn ngoan. Thầy sợ nhỡ sai thì xấu hổ. Nên thầy mới bảo học trò đọc khẽ. Tuy vậy, trong lòng thầy vẫn lo lắng.
+<sent>Thầy khôn ngoan nên sợ nhỡ sai thì xấu hổ, bảo học trò đọc khẽ. Nhưng trong lòng thầy vẫn lo lắng.</sent>
+Paraphasal sent:  Thầy khôn ngoan nên sợ nhỡ sai thì xấu hổ, bảo học trò đọc khẽ. Nhưng trong lòng thầy vẫn lo lắng.
+ 50%|████████████████████████████████████████████████████████████████████▌                                                                    | 5/10 [00:32<00:35,  7.00s/it]Làng kia có một viên lí trưởng nổi tiếng xử kiện giỏi .
+Lexical sent:  Làng kia có một người đứng đầu xử kiện giỏi.
+<sent>Làng kia có một người đứng đầu.</sent>
+<sent>Người đó giỏi xử kiện.</sent>
+Split sent:  Làng kia có một người đứng đầu. Người đó giỏi xử kiện.
+<sent>Làng đó có một người đứng đầu giỏi xử kiện.</sent>
+Paraphasal sent:  Làng đó có một người đứng đầu giỏi xử kiện.
+ 60%|██████████████████████████████████████████████████████████████████████████████████▏                                                      | 6/10 [00:38<00:26,  6.61s/it]Có một cái gì rất lạ với tự nhiên và rất giống con người ở đây ; và để nhân cách hóa nó lên , tôi gọi đấy là nỗi vương vấn , cả một chút lẳng lơ kín đáo của tình yêu .
+Lexical sent:  Ở đây, có thứ gì đó rất khác thường nhưng lại rất giống con người; và để nhân cách hóa nó lên, tôi gọi đó là nỗi nhớ nhung, một chút tình yêu kín đáo.
+<sent>Ở đây, có thứ gì đó rất khác thường.</sent>
+<sent>Thứ đó lại rất giống con người.</sent>
+<sent>Để nhân cách hóa nó lên, tôi gọi đó là nỗi nhớ nhung.</sent>
+<sent>Nỗi nhớ nhung là một chút tình yêu kín đáo.</sent>
+Split sent:  Ở đây, có thứ gì đó rất khác thường. Thứ đó lại rất giống con người. Để nhân cách hóa nó lên, tôi gọi đó là nỗi nhớ nhung. Nỗi nhớ nhung là một chút tình yêu kín đáo.
+<sent>Ở đây, có một thứ rất khác thường, giống như con người. Tôi gọi đó là nỗi nhớ nhung, một chút tình yêu kín đáo.</sent>
+Paraphasal sent:  Ở đây, có một thứ rất khác thường, giống như con người. Tôi gọi đó là nỗi nhớ nhung, một chút tình yêu kín đáo.
+ 70%|███████████████████████████████████████████████████████████████████████████████████████████████▉                                         | 7/10 [00:45<00:20,  6.73s/it]Khoa học đối với Mác là một động lực lịch sử , một lực lượng cách mạng .
+Lexical sent:  Khoa học đối với Mác là một động lực lịch sử, một lực lượng làm thay đổi xã hội.
+<sent>Khoa học đối với Mác là một động lực lịch sử.</sent>
+<sent>Khoa học cũng là một lực lượng làm thay đổi xã hội.</sent>
+Split sent:  Khoa học đối với Mác là một động lực lịch sử. Khoa học cũng là một lực lượng làm thay đổi xã hội.
+<sent>Khoa học là một động lực lịch sử và cũng là một lực lượng làm thay đổi xã hội đối với Mác.</sent>
+Paraphasal sent:  Khoa học là một động lực lịch sử và cũng là một lực lượng làm thay đổi xã hội đối với Mác.
+ 80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                           | 8/10 [00:52<00:13,  6.80s/it]Ghê rợn nhứt là khi thấy ông đi ra khỏi mé rừng , áo rách vai , tóc rối nùi , mắt đỏ ngầu , bó nhang cháy đỏ quơ qua quơ lại trên tay .
+Lexical sent:  Thật đáng sợ khi nhìn thấy ông đi ra khỏi mép rừng, áo rách vai, tóc rối bời, mắt đỏ ngầu, bó nhang cháy đỏ quơ qua quơ lại trên tay.
+<sent>Ông đi ra khỏi mép rừng.</sent>
+<sent>Áo ông rách vai.</sent>
+<sent>Tóc ông rối bời.</sent>
+<sent>Mắt ông đỏ ngầu.</sent>
+<sent>Ông quơ qua quơ lại bó nhang cháy đỏ trên tay.</sent>
+<sent>Nhìn thấy ông thật đáng sợ.</sent>
+Split sent:  Ông đi ra khỏi mép rừng. Áo ông rách vai. Tóc ông rối bời. Mắt ông đỏ ngầu. Ông quơ qua quơ lại bó nhang cháy đỏ trên tay. Nhìn thấy ông thật đáng sợ.
+<sent>Ông bước ra khỏi mép rừng với quần áo rách vai, tóc tai rối bời, mắt đỏ ngầu. Trong tay ông cầm một bó nhang cháy đỏ, ông quơ qua quơ lại trông rất đáng sợ.</sent>
+Paraphasal sent:  Ông bước ra khỏi mép rừng với quần áo rách vai, tóc tai rối bời, mắt đỏ ngầu. Trong tay ông cầm một bó nhang cháy đỏ, ông quơ qua quơ lại trông rất đáng sợ.
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎             | 9/10 [01:07<00:09,  9.35s/it]Bây giờ mình biết rõ nó thương mình , nó còn kính trọng mình , mà nó lại gần được giàu có sung sướng hết thảy nữa , vậy thì nên chết rồi , chết mới quên hết việc cũ được , chết đặng hết buồn rầu cực khổ nữa .
+The `response.parts` quick accessor only works for a single candidate, but none were returned. Check the `response.prompt_feedback` to see if the prompt was blocked.
+Error: Bây giờ mình biết rõ nó thương mình , nó còn kính trọng mình , mà nó lại gần được giàu có sung sướng hết thảy nữa , vậy thì nên chết rồi , chết mới quên hết việc cũ được , chết đặng hết buồn rầu cực khổ nữa .
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [01:09<00:00,  6.94s/it]
+  0%|                                                                                                                                                 | 0/10 [00:00<?, ?it/s]Thời gian gần đây khái niệm diễn ngôn đã xuất hiện rất nhiều trong các bài nghiên cứu đủ loại , nhiều đến mức không sao có thể định nghĩa thông suốt hết .
+Lexical sent:  Gần đây, khái niệm diễn ngôn được viết trong nhiều bài nghiên cứu khác nhau, nhiều đến mức khó có thể định nghĩa hết.
+<sent>Gần đây, khái niệm diễn ngôn được viết trong nhiều bài nghiên cứu khác nhau.</sent>
+<sent>Số lượng nhiều đến mức khó có thể định nghĩa hết.</sent>
+Split sent:  Gần đây, khái niệm diễn ngôn được viết trong nhiều bài nghiên cứu khác nhau. Số lượng nhiều đến mức khó có thể định nghĩa hết.
+<sent>Gần đây, khái niệm diễn ngôn được đề cập trong nhiều bài nghiên cứu.</sent>
+<sent>Nhiều bài nghiên cứu viết về khái niệm diễn ngôn đến mức khó có thể định nghĩa hết.</sent>
+Paraphasal sent:  Gần đây, khái niệm diễn ngôn được đề cập trong nhiều bài nghiên cứu. Nhiều bài nghiên cứu viết về khái niệm diễn ngôn đến mức khó có thể định nghĩa hết.
+ 10%|█████████████▋                                                                                                                           | 1/10 [00:06<00:58,  6.46s/it]Hai thập niên đầu thế kỷ XX ở Việt Nam , trong nhiều vấn đề nhân học , nổi lên vấn đề nữ học như là một vấn đề quan trọng , thu hút sự chú ý thảo luận và tranh luận của giới trí thức , nhất là nhìn từ quan điểm của chính người phụ nữ .
+Lexical sent:  Hai mươi năm đầu thế kỷ 20 ở Việt Nam, trong nhiều vấn đề về con người, nổi lên vấn đề về phụ nữ như là một vấn đề quan trọng, được nhiều người quan tâm và thảo luận, nhất là từ góc nhìn của chính những người phụ nữ.
+<sent>Trong hai mươi năm đầu thế kỷ 20 ở Việt Nam, nhiều vấn đề về con người nổi lên.</sent>
+<sent>Trong số đó, vấn đề về phụ nữ là một vấn đề quan trọng.</sent>
+<sent>Vấn đề này được nhiều người quan tâm và thảo luận.</sent>
+<sent>Đặc biệt là từ góc nhìn của chính những người phụ nữ.</sent>
+Split sent:  Trong hai mươi năm đầu thế kỷ 20 ở Việt Nam, nhiều vấn đề về con người nổi lên. Trong số đó, vấn đề về phụ nữ là một vấn đề quan trọng. Vấn đề này được nhiều người quan tâm và thảo luận. Đặc biệt là từ góc nhìn của chính những người phụ nữ.
+<sent>Trong hai mươi năm đầu thế kỷ 20, vấn đề về phụ nữ ở Việt Nam nổi lên và được nhiều người quan tâm, thảo luận, đặc biệt là từ góc nhìn của chính những người phụ nữ.</sent>
+Paraphasal sent:  Trong hai mươi năm đầu thế kỷ 20, vấn đề về phụ nữ ở Việt Nam nổi lên và được nhiều người quan tâm, thảo luận, đặc biệt là từ góc nhìn của chính những người phụ nữ.
+ 20%|███████████████████████████▍                                                                                                             | 2/10 [00:13<00:52,  6.61s/it]Nay tôi xin ví dụ như có hai con đường , một bên mới , khoáng rộng bằng phẳng , lạ mắt khó trông , lại đông người đi , một bên con đường cũ thời hẹp hòi cỏ rạ um thùm , cứ noi theo dấu mòn mà đi rất dễ , nhưng người đi thường than vắng tẻ , tưởng không bao lâu họ sẽ quay sang con đường mới kia hết .
+Lexical sent:  Bây giờ tôi xin ví dụ như có hai con đường, một bên mới, rộng rãi bằng phẳng, lạ mắt khó nhìn, lại có nhiều người đi. Một bên là con đường cũ thời xưa hẹp hòi, cỏ rạ um tùm, cứ đi theo dấu mòn thì rất dễ, nhưng người đi thường phàn nàn là vắng vẻ, nghĩ rằng không bao lâu sau họ sẽ chuyển sang con đường mới kia hết.
+<sent>Chúng ta thử nghĩ từng bước như một chuyên gia ngôn ngữ Việt Nam và trả lời bằng tiếng Việt.</sent>
+<sent>Nếu câu đã đơn giản, chỉ cần đưa kết quả vào thẻ <sent>.</sent>
+Split sent:  Chúng ta thử nghĩ từng bước như một chuyên gia ngôn ngữ Việt Nam và trả lời bằng tiếng Việt. Nếu câu đã đơn giản, chỉ cần đưa kết quả vào thẻ <sent>.
+<sent>Chúng ta thử từng bước nghĩ như chuyên gia ngôn ngữ Việt Nam và trả lời bằng tiếng Việt. Nếu câu đã đơn giản, chỉ cần đưa kết quả vào thẻ <sent>.</sent>
+Paraphasal sent:  Chúng ta thử từng bước nghĩ như chuyên gia ngôn ngữ Việt Nam và trả lời bằng tiếng Việt. Nếu câu đã đơn giản, chỉ cần đưa kết quả vào thẻ <sent>.
+ 30%|█████████████████████████████████████████                                                                                                | 3/10 [00:22<00:53,  7.63s/it]Tư tưởng này hiển nhiên đối lập với truyền thống ứng xử thân xác của các học thuyết Nho , Phật ở phương Đông là dĩ tâm khống thân , coi thường thân xác .
+Lexical sent:  Quan điểm này trái ngược với truyền thống coi trọng thân xác của các học thuyết Nho giáo và Phật giáo ở phương Đông, nhấn mạnh vào việc kiểm soát thân xác bằng tâm trí và xem thường thân xác.
+<sent>Quan điểm này trái ngược với truyền thống coi trọng thân xác của các học thuyết Nho giáo và Phật giáo ở phương Đông.</sent>
+<sent>Các học thuyết này nhấn mạnh vào việc kiểm soát thân xác bằng tâm trí và xem thường thân xác.</sent>
+Split sent:  Quan điểm này trái ngược với truyền thống coi trọng thân xác của các học thuyết Nho giáo và Phật giáo ở phương Đông. Các học thuyết này nhấn mạnh vào việc kiểm soát thân xác bằng tâm trí và xem thường thân xác.
+<sent>Quan điểm này ngược lại với truyền thống Nho giáo, Phật giáo ở phương Đông coi trọng thân xác.</sent>
+<sent>Các học thuyết này nhấn mạnh vào việc dùng tâm trí kiểm soát thân xác và coi thường thân xác.</sent>
+Paraphasal sent:  Quan điểm này ngược lại với truyền thống Nho giáo, Phật giáo ở phương Đông coi trọng thân xác. Các học thuyết này nhấn mạnh vào việc dùng tâm trí kiểm soát thân xác và coi thường thân xác.
+ 40%|██████████████████████████████████████████████████████▊                                                                                  | 4/10 [00:29<00:45,  7.53s/it]Sau đó lần lượt lập thành tích xuất sắc tại các đường đua xanh châu lục và thế giới , nên đến SEA Games 2015 , cô đã vươn tới đẳng cấp hàng đẩu Đông Nam Á .
+Lexical sent:  Sau đó, cô đã lập thành tích tốt ở châu lục và thế giới, rồi cô đã đạt tới trình độ hàng đầu Đông Nam Á tại SEA Games 2015.
+<sent>Sau đó, cô đã lập thành tích tốt ở châu lục và thế giới.</sent>
+<sent>Cô đã đạt tới trình độ hàng đầu Đông Nam Á tại SEA Games 2015.</sent>
+Split sent:  Sau đó, cô đã lập thành tích tốt ở châu lục và thế giới. Cô đã đạt tới trình độ hàng đầu Đông Nam Á tại SEA Games 2015.
+<sent>Sau đó, cô đã lập thành tích tốt ở châu lục và thế giới. Trình độ của cô đã đạt hàng đầu Đông Nam Á tại SEA Games 2015.</sent>
+Paraphasal sent:  Sau đó, cô đã lập thành tích tốt ở châu lục và thế giới. Trình độ của cô đã đạt hàng đầu Đông Nam Á tại SEA Games 2015.
+ 50%|████████████████████████████████████████████████████████████████████▌                                                                    | 5/10 [00:36<00:36,  7.33s/it]Tất nhiên đằng sau bất kỳ lĩnh vực hoạt động nào cũng liên quan đến bình diện dân tộc và giai cấp , nhưng chính nó mới chủ yếu và trực tiếp tác động và bị tác động với con người .
+Lexical sent:  Mọi lĩnh vực hoạt động đều liên quan đến dân tộc và giai cấp, nhưng chính điều đó mới chủ yếu và trực tiếp tác động và bị tác động với con người.
+<sent>Mọi lĩnh vực hoạt động đều liên quan đến dân tộc và giai cấp.</sent>
+<sent>Chính điều đó mới chủ yếu và trực tiếp tác động và bị tác động với con người.</sent>
+Split sent:  Mọi lĩnh vực hoạt động đều liên quan đến dân tộc và giai cấp. Chính điều đó mới chủ yếu và trực tiếp tác động và bị tác động với con người.
+<sent>Mọi lĩnh vực hoạt động đều liên quan đến dân tộc và giai cấp. Chính điều đó mới chủ yếu và trực tiếp tác động và bị tác động với con người.</sent>
+Paraphasal sent:  Mọi lĩnh vực hoạt động đều liên quan đến dân tộc và giai cấp. Chính điều đó mới chủ yếu và trực tiếp tác động và bị tác động với con người.
+ 60%|██████████████████████████████████████████████████████████████████████████████████▏                                                      | 6/10 [00:43<00:28,  7.13s/it]Nhưng nếu ngẫm kĩ , sẽ vỡ lẽ người kể rất quan tâm tới thái độ và hành ứng xử của ngục quan trước lời lẽ khinh bạc đến điều của ông Huấn .
+Lexical sent:  Nhưng nếu nghĩ kỹ, sẽ hiểu rằng người kể chuyện rất quan tâm đến thái độ và hành động của giám ngục trước lời lẽ hỗn xược của ông Huấn.
+<sent>Người kể chuyện rất quan tâm đến thái độ và hành động của giám ngục trước lời lẽ hỗn xược của ông Huấn.</sent>
+Split sent:  Người kể chuyện rất quan tâm đến thái độ và hành động của giám ngục trước lời lẽ hỗn xược của ông Huấn.
+<sent>Người kể chuyện chú ý rất nhiều đến thái độ và hành động của giám ngục khi ông Huấn hỗn xược.</sent>
+Paraphasal sent:  Người kể chuyện chú ý rất nhiều đến thái độ và hành động của giám ngục khi ông Huấn hỗn xược.
+ 70%|███████████████████████████████████████████████████████████████████████████████████████████████▉                                         | 7/10 [00:50<00:21,  7.28s/it]Nghệ thuật là nơi chuyển tải tri thức , tư tưởng và đạo lý theo một nhịp điệu vĩnh viễn , thâm trầm .
+Lexical sent:  Nghệ thuật là nơi truyền tải kiến thức, suy nghĩ và đạo đức theo một nhịp điệu dài lâu, sâu sắc.
+<sent>Nghệ thuật là phương tiện truyền tải kiến thức.</sent>
+<sent>Nghệ thuật là phương tiện truyền tải suy nghĩ.</sent>
+<sent>Nghệ thuật là phương tiện truyền tải đạo đức.</sent>
+<sent>Nghệ thuật truyền tải kiến thức, suy nghĩ và đạo đức theo một nhịp điệu dài lâu, sâu sắc.</sent>
+Split sent:  Nghệ thuật là phương tiện truyền tải kiến thức. Nghệ thuật là phương tiện truyền tải suy nghĩ. Nghệ thuật là phương tiện truyền tải đạo đức. Nghệ thuật truyền tải kiến thức, suy nghĩ và đạo đức theo một nhịp điệu dài lâu, sâu sắc.
+<sent>Nghệ thuật là phương tiện truyền tải kiến thức, suy nghĩ, và đạo đức theo nhịp điệu dài lâu và sâu sắc.</sent>
+Paraphasal sent:  Nghệ thuật là phương tiện truyền tải kiến thức, suy nghĩ, và đạo đức theo nhịp điệu dài lâu và sâu sắc.
+ 80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                           | 8/10 [00:57<00:14,  7.26s/it]Công cuộc đổi mới văn học , thực tế đã diễn ra từ sau 1975 , tuy nhiên , trong khoảng thời gian 1975 - 1985 , giới văn nghệ chỉ mới dò đường .
+Lexical sent:  Quá trình thay đổi văn học đã diễn ra sau năm 1975, nhưng từ năm 1975 đến năm 1985, các nhà văn vẫn đang tìm kiếm hướng đi.
+<sent>Quá trình thay đổi văn học diễn ra sau năm 1975.</sent>
+<sent>Trong giai đoạn từ năm 1975 đến năm 1985, các nhà văn vẫn đang tìm kiếm hướng đi.</sent>
+Split sent:  Quá trình thay đổi văn học diễn ra sau năm 1975. Trong giai đoạn từ năm 1975 đến năm 1985, các nhà văn vẫn đang tìm kiếm hướng đi.
+<sent>Văn học đã thay đổi kể từ năm 1975. Từ năm 1975 đến năm 1985, các nhà văn vẫn còn đang tìm kiếm hướng đi.</sent>
+Paraphasal sent:  Văn học đã thay đổi kể từ năm 1975. Từ năm 1975 đến năm 1985, các nhà văn vẫn còn đang tìm kiếm hướng đi.
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎             | 9/10 [01:05<00:07,  7.47s/it]Tuy nhiên , sự kiện đất nước bước vào công cuộc đổi mới toàn diện thực sự đã tạo nên bước ngoặt tác động tích cực đến giới sáng tác .
+Lexical sent:  Nhưng khi đất nước đổi mới toàn diện, giới sáng tác được tác động tích cực.
+<sent>Nhưng đất nước đã đổi mới toàn diện.</sent>
+<sent>Giới sáng tác được tác động tích cực.</sent>
+Split sent:  Nhưng đất nước đã đổi mới toàn diện. Giới sáng tác được tác động tích cực.
+<sent>Đất nước đã đổi mới toàn diện. Điều này tác động tích cực đến giới sáng tác.</sent>
+Paraphasal sent:  Đất nước đã đổi mới toàn diện. Điều này tác động tích cực đến giới sáng tác.
